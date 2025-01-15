@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "junetech_geo:sand_pile_plagioclase_feldspar"
+    }
+  },
+  "result": {
+    "item": "junetech_geo:sand_plagioclase_feldspar",
+    "count": 1
+  }
+}

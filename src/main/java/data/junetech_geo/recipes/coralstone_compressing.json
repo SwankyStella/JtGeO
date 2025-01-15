@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "junetech_geo:fossil_coral"
+    }
+  },
+  "result": {
+    "block": "minecraft:coralstone_fossilized"
+  }
+}

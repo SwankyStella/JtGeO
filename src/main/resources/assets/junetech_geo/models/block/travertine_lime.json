@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "junetech_geo:block/travertine_lime_top",
+      "side": "junetech_geo:block/travertine_lime"
+    }
+  }

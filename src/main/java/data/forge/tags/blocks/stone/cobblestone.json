@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "junetech_geo:limestone_cobblestone",
+    "junetech_geo:limestone_black_cobblestone",
+    "junetech_geo:limestone_coquina_cobblestone",
+    "junetech_geo:chalk_cobblestone",
+    "junetech_geo:chert_cobblestone",
+    "junetech_geo:chert_calcedony_cobblestone",
+    "junetech_geo:chert_novaculite_cobblestone",
+    "junetech_geo:sandstone_quartz_arenite_cobblestone",
+    "junetech_geo:sandstone_feldspathic_arenite_cobblestone",
+    "junetech_geo:dolomite_cobblestone",
+    "junetech_geo:sandstone_arkose_cobblestone",
+    "junetech_geo:sandstone_greywacke_cobblestone",
+    "junetech_geo:schist_blue_cobblestone",
+    "junetech_geo:schist_green_cobblestone",
+    "junetech_geo:eclogite_cobblestone",
+    "junetech_geo:marble_cobblestone",
+    "junetech_geo:phyllite_cobblestone",
+    "junetech_geo:quartzite_cobblestone"
+  ]
+}

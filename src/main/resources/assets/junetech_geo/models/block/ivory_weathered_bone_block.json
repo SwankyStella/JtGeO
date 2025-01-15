@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "junetech_geo:block/ivory_weathered_bone_block_top",
+    "side": "junetech_geo:block/ivory_weathered_bone_block_side"
+  }
+}
