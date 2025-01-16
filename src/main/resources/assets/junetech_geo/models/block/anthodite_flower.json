@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "junetech_geo:block/anthodite_flower"
-  }
-}

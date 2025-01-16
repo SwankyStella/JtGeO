@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "junetech_geo:block/amethyst_pillar_top",
-    "side": "junetech_geo:block/amethyst_pillar_side"
-  }
-}

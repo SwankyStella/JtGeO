@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "junetech_geo:block/prasiolite_chiseled_top",
-    "side": "junetech_geo:block/prasiolite_chiseled_side"
-  }
-}
