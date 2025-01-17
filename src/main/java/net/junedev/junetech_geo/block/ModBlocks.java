@@ -650,7 +650,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_CALCAREOUS_SHALE = registerBlock("limestone_calcareous_shale",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> LIMESTONE_CALCILUTITE = registerBlock("limestome_calcilutite",
+    public static final RegistryObject<Block> LIMESTONE_CALCILUTITE = registerBlock("limestone_calcilutite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> LIMESTONE_CALCIRUDITE = registerBlock("limestone_calcirudite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
@@ -1471,7 +1471,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> YTTRIUM_BLOCK = registerBlock("yttrium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
-    public static final RegistryObject<Block> ZINC_BLOCK = registerBlock("zinc",
+    public static final RegistryObject<Block> ZINC_BLOCK = registerBlock("zinc_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> ZIRCONIUM_BLOCK = registerBlock("zirconium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
@@ -2106,7 +2106,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> AMETRINE_SMALL_BUD = registerBlock("ametrine_small_bud",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> CITRINE_CRYSTAL_BLOCK = registerBlock("citrine_crysal_block",
+    public static final RegistryObject<Block> CITRINE_CRYSTAL_BLOCK = registerBlock("citrine_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CITRINE_BUDDING_CRYSTAL_BLOCK = registerBlock("citrine_budding_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
