@@ -13,14 +13,24 @@ import java.util.List;
 public class ItemWithTooltip extends Item {
 	private final String tooltip;
 
-	public ItemWithTooltip(Properties pProperties, String pTooltip) {
+	private final boolean displayBelowName;
+
+	public ItemWithTooltip(Properties pProperties, String pTooltip, boolean pDisplayBelowName) {
 		super(pProperties);
 		this.tooltip = pTooltip;
+		this.displayBelowName = pDisplayBelowName;
 	}
 
 	@Override
-	public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-		pTooltipComponents.add(Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
-		super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+	public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+		if (displayBelowName)
+			pTooltip.add(1, Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
+		else
+			pTooltip.add(Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
+		super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+	}
+
+	public Component getTooltip() {
+		return Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY);
 	}
 }

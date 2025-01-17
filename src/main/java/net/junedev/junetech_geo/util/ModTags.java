@@ -18,6 +18,16 @@ public class ModTags {
         public static final TagKey<Block> SECONDARY_REPLACEABLE = tag("secondary_replaceable");
         public static final TagKey<Block> TERTIARY_REPLACEABLE = tag("tertiary_replaceable");
 
+        public static final TagKey<Block> caso4 = tag("caso4");
+        public static final TagKey<Block> fe2o3 = tag("fe2o3");
+        public static final TagKey<Block> hornblende = tag("hornblende");
+        public static final TagKey<Block> kcl = tag("kcl");
+        public static final TagKey<Block> kclnacl = tag("kclnacl");
+        public static final TagKey<Block> kspar = tag("kspar");
+        public static final TagKey<Block> nacl = tag("nacl");
+        public static final TagKey<Block> olivine = tag("olivine");
+        public static final TagKey<Block> pspar = tag("pspar");
+        public static final TagKey<Block> sio2 = tag("sio2");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(JunetechGeo.MOD_ID, name));

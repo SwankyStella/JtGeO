@@ -4,6 +4,7 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = mod_version
@@ -19,8 +20,9 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 minecraft {
     mappings channel: mapping_channel, version: "${mapping_version}-${minecraft_version}"
 
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
     copyIdeResources = true
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
         client {
@@ -89,7 +91,17 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    // Mixin
+    annotationProcessor 'org.spongepowered:mixin:0.8.7:processor'
 }
+
+mixin {
+    // MixinGradle Settings
+    add sourceSets.main, 'mixins.junetech_geo.refmap.json'
+    config 'mixins.junetech_geo.json'
+}
+
 
 def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
 def replaceProperties = [

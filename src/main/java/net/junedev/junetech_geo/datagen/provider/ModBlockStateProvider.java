@@ -19,7 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
             try {
                 blockWithItem(block);
             } catch (IllegalArgumentException ignored) {
-                JunetechGeo.LOGGER.warn("Block without texture: {}", block.getId().toString());
+                JunetechGeo.LOGGER.warn("Block without texture: {}", block.getId());
             }
         }
     }

@@ -1,9 +1,9 @@
 package net.junedev.junetech_geo;
 
 import com.mojang.logging.LogUtils;
+import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.item.ModCreativeModeTabs;
 import net.junedev.junetech_geo.item.ModItems;
-import net.junedev.junetech_geo.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,7 +38,6 @@ public class JunetechGeo {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
