@@ -1,6 +1,5 @@
 package net.junedev.junetech_geo.block;
 
-import net.junedev.junetech_geo.block.tooltips.*;
 import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.item.ModItems;
 import net.minecraft.world.item.BlockItem;

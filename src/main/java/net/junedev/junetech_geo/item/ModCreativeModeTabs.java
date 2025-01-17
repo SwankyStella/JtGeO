@@ -6,7 +6,6 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,8 +19,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> ROCKS = CREATIVE_MODE_TABS.register("rocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LIMESTONE.get()))
-                    .title(Component.translatable("creativetab.rocks").withStyle(ChatFormatting.GRAY
-                    ))
+                    .title(Component.translatable("creativetab.rocks").withStyle(ChatFormatting.GRAY))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(Blocks.STONE);
                         pOutput.accept(Blocks.DEEPSLATE);
