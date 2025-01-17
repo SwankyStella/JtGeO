@@ -35,7 +35,7 @@ public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingIn
     }
 
     @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At("HEAD"), cancellable = true)
-    public void junetech_geo$CreativeModeInventoryScreenMixin(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
+    public void junetech_geo$getTooltipFromContainerItem(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
         var resourceLocation = BuiltInRegistries.ITEM.getKey(pStack.getItem());
 
         if (resourceLocation != null && resourceLocation.getNamespace().equals("junetech_geo") && pStack.getItem() instanceof BlockItem) {
