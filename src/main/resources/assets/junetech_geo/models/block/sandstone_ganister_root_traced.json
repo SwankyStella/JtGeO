@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "junetech_geo:block/sandstone_ganister",
+    "east": "junetech_geo:block/sandstone_ganister_root_traced",
+    "north": "junetech_geo:block/sandstone_ganister_root_traced",
+    "particle": "junetech_geo:block/sandstone_ganister",
+    "south": "junetech_geo:block/sandstone_ganister_root_traced",
+    "up": "junetech_geo:block/bitumen",
+    "west": "junetech_geo:block/sandstone_ganister_root_traced"
+  }
+}

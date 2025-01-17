@@ -137,7 +137,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CALCFLINTA = registerBlock("calcflinta",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CALTHEMITE = registerBlock("calthemite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> CARBONATITE_FENITE = registerBlock("carbonatite_fenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CARBONATITE_SOVITE = registerBlock("carbonatite_sovite",
@@ -151,7 +151,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CATACLASITE_POLISHED = registerBlock("cataclasite_polished",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CAVE_POPCORN = registerBlock("cave_popcorn",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> CHALCONATRONITE = registerBlock("chalconatronite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CHALK = registerBlock("chalk",

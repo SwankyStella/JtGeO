@@ -59,6 +59,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ANTHRACITE_BRICKS);
         blockWithItem(ModBlocks.ANTHRACITE_BRICKS_SMALL);
         blockWithItem(ModBlocks.ANTHRACITE_RESINITE);
+        blockWithItem(ModBlocks.ANTHRACITE_POLISHED);
         blockWithItem(ModBlocks.ANTIMONY_BLOCK);
         blockWithItem(ModBlocks.AQUARIUM_GRAVEL);
         blockWithItem(ModBlocks.AQUARIUM_GRAVEL_NEON);
@@ -149,6 +150,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CHERT_AGATE_MOSS);
         blockWithItem(ModBlocks.CHERT_AGATE_POLISHED);
         blockWithItem(ModBlocks.CHERT_AGATE_PURPLE);
+        blockWithItem(ModBlocks.CHERT_BRICKS);
+        blockWithItem(ModBlocks.CHERT_BRICKS_SMALL);
         blockWithItem(ModBlocks.CHERT_CHALCEDONY);
         blockWithItem(ModBlocks.CHERT_CHALCEDONY_BRICKS);
         blockWithItem(ModBlocks.CHERT_CHALCEDONY_BRICKS_SMALL);
@@ -174,6 +177,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CHERT_NOVACULITE_COBBLESTONE);
         blockWithItem(ModBlocks.CHERT_NOVACULITE_POLISHED);
         blockWithItem(ModBlocks.CHERT_PIETERSITE);
+        blockWithItem(ModBlocks.CHERT_POLISHED);
         blockWithItem(ModBlocks.CHERT_RADIOLARIAN);
         blockWithItem(ModBlocks.CHERT_ROTTENSTONE);
         blockWithItem(ModBlocks.CHLORASTOLITE);
@@ -238,6 +242,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DIAMICTITE_BRICKS);
         blockWithItem(ModBlocks.DIAMICTITE_BRICKS_SMALL);
         blockWithItem(ModBlocks.DIAMICTITE_COBBLESTONE);
+        blockWithItem(ModBlocks.DIAMICTITE_POLISHED);
         blockWithItem(ModBlocks.DIAMICTITE_TILLITE);
         blockWithItem(ModBlocks.DIATOMITE);
         blockWithItem(ModBlocks.DIORITE_BLACK);
@@ -255,6 +260,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DIRT_ROCKY);
         blockWithItem(ModBlocks.DIRT_ROOTED_DENSE);
         blockWithItem(ModBlocks.DIRT_ROOTED_STONY);
+        blockWithItem(ModBlocks.DIRT_SAPROLITE);
         blockWithItem(ModBlocks.DOLOMITE);
         blockWithItem(ModBlocks.DOLOMITE_BRICKS);
         blockWithItem(ModBlocks.DOLOMITE_BRICKS_SMALL);
@@ -277,6 +283,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ECLOGITE);
         blockWithItem(ModBlocks.ECLOGITE_BRICKS);
         blockWithItem(ModBlocks.ECLOGITE_BRICKS_SMALL);
+        blockWithItem(ModBlocks.ECLOGITE_COBBLESTONE);
         blockWithItem(ModBlocks.ECLOGITE_POLISHED);
         blockWithItem(ModBlocks.EMERY);
         blockWithItem(ModBlocks.ENDSTONE_POLISHED);
@@ -451,6 +458,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LIMESTONE_COQUINA);
         blockWithItem(ModBlocks.LIMESTONE_COQUINA_BRICKS);
         blockWithItem(ModBlocks.LIMESTONE_COQUINA_BRICKS_SMALL);
+        blockWithItem(ModBlocks.LIMESTONE_COQUINA_COBBLESTONE);
         blockWithItem(ModBlocks.LIMESTONE_COQUINA_DEFOSSILIZED);
         blockWithItem(ModBlocks.LIMESTONE_COQUINA_POLISHED);
         blockWithItem(ModBlocks.LIMESTONE_FOSSILIFEROUS);
@@ -481,6 +489,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MARBLE_BLACK_COBBLESTONE);
         blockWithItem(ModBlocks.MARBLE_BRICKS);
         blockWithItem(ModBlocks.MARBLE_BRICKS_SMALL);
+        blockWithItem(ModBlocks.MARBLE_CARRARA);
         blockWithItem(ModBlocks.MARBLE_COBBLESTONE);
         blockWithItem(ModBlocks.MARBLE_DOLOMITE);
         blockWithItem(ModBlocks.MARBLE_GRAND_ANTIQUE);
@@ -511,6 +520,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MONZODIORITE);
         blockWithItem(ModBlocks.MONZOGRANITE);
         blockWithItem(ModBlocks.MONZOGRANITE_POLISHED);
+        blockWithItem(ModBlocks.MONZONITE);
         blockWithItem(ModBlocks.MONZONITE_LARVIKITE);
         blockWithItem(ModBlocks.MONZONITE_QUARTZ);
         blockWithItem(ModBlocks.MORTAR_BLOCK);
@@ -525,6 +535,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MUGEARITE);
         blockWithItem(ModBlocks.MUGEARITE_BRICKS);
         blockWithItem(ModBlocks.MUGEARITE_BRICKS_SMALL);
+        blockWithItem(ModBlocks.MUGEARITE_POLISHED);
         blockWithItem(ModBlocks.MULLITE_BLOCK);
         blockWithItem(ModBlocks.MULLITE_TILES);
         blockWithItem(ModBlocks.MYLONITE);
@@ -647,6 +658,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.QUARTZITE_BRICKS);
         blockWithItem(ModBlocks.QUARTZITE_BRICKS_SMALL);
         blockWithItem(ModBlocks.QUARTZITE_COBBLESTONE);
+        blockWithItem(ModBlocks.QUARTZITE_POLISHED);
         blockWithItem(ModBlocks.QUARTZITE_STIPERSTONE);
         blockWithItem(ModBlocks.QUARTZITE_WEATHERED);
         blockWithItem(ModBlocks.QUARTZOLITE);
@@ -717,6 +729,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE_BRICKS_SMALL);
         blockWithItem(ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE_COBBLESTONE);
         blockWithItem(ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE_POLISHEd);
+        blockWithItem(ModBlocks.SANDSTONE_GANISTER);
         blockWithItem(ModBlocks.SANDSTONE_GLAUCONITE_SMOOTH);
         blockWithItem(ModBlocks.SANDSTONE_GRANITE_SMOOTH);
         blockWithItem(ModBlocks.SANDSTONE_GREYWACKE);
@@ -748,6 +761,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SCHIST_GREEN);
         blockWithItem(ModBlocks.SCHIST_GREEN_BRICKS);
         blockWithItem(ModBlocks.SCHIST_GREEN_BRICKS_SMALL);
+        blockWithItem(ModBlocks.SCHIST_GREEN_COBBLESTONE);
+        blockWithItem(ModBlocks.SCHIST_GREEN_POLISHED);
         blockWithItem(ModBlocks.SCHIST_MICA);
         blockWithItem(ModBlocks.SCHIST_WHITE);
         blockWithItem(ModBlocks.SCHIST_WHITE_COBBLESTONE);
@@ -799,6 +814,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SILT_ROOTED);
         blockWithItem(ModBlocks.SILTSTONE);
         blockWithItem(ModBlocks.SILTSTONE_BRICKS);
+        blockWithItem(ModBlocks.SILTSTONE_COBBLESTONE);
         blockWithItem(ModBlocks.SILTSTONE_BRICKS_SMALL);
         blockWithItem(ModBlocks.SILTSTONE_POLISHED);
         blockWithItem(ModBlocks.SILVER_BLOCK);
