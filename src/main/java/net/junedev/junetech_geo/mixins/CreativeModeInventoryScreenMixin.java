@@ -1,6 +1,8 @@
 package net.junedev.junetech_geo.mixins;
 
 import com.google.common.collect.Lists;
+import net.junedev.junetech_geo.block.BlockWithTooltip;
+import net.junedev.junetech_geo.item.ItemWithTooltip;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
 import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
@@ -19,8 +21,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.List;
 import java.util.Set;
 
-import static net.junedev.junetech_geo.util.CompositionIDs.*;
-
 @Mixin(CreativeModeInventoryScreen.class)
 public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingInventoryScreen<CreativeModeInventoryScreen.ItemPickerMenu> {
     @Shadow
@@ -35,10 +35,13 @@ public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingIn
     }
 
     @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At("HEAD"), cancellable = true)
-    public void junetech_geo$getTooltipFromContainerItem(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
+    public void addTooltip(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
         var resourceLocation = BuiltInRegistries.ITEM.getKey(pStack.getItem());
 
-        if (resourceLocation != null && resourceLocation.getNamespace().equals("junetech_geo") && pStack.getItem() instanceof BlockItem) {
+        if (resourceLocation != null && resourceLocation.getNamespace().equals("junetech_geo") &&
+                (pStack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BlockWithTooltip ||
+                pStack.getItem() instanceof ItemWithTooltip)
+        ) {
             boolean flag = this.hoveredSlot != null && this.hoveredSlot instanceof CreativeModeInventoryScreen.CustomCreativeSlot;
             boolean flag1 = selectedTab.getType() == CreativeModeTab.Type.CATEGORY;
             boolean flag2 = selectedTab.hasSearchBar();
@@ -55,44 +58,11 @@ public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingIn
                 Item hoveredItem = hoveredSlot.getItem().getItem();
 
                 if (hoveredItem != null) {
-                    if (getCaso4().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("CaSO₄·H₂O").withStyle(ChatFormatting.GRAY));
+                    if (pStack.getItem() instanceof BlockItem bItem && bItem.getBlock() instanceof BlockWithTooltip bTooltip &&
+                            !bTooltip.getTooltip().toFlatList().isEmpty()) {
                         index = 2;
-                    }
-                    if (getFe2o3().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("Fe₂O₃").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getHornblende().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("Ca₂(Mg,Fe,Al)₅(Al,Si)₈O₂₂(OH)₂").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getKcl().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("KCl").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getKclnacl().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("KCl·(NaCl)₂").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getKspar().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("K(AlSi₃O₈)").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getNacl().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("NaCl").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getOlivine().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("(Mg,Fe)₂·SiO₄").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getPspar().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("NaAlSi₃O₈·CaAl₂Si₂O₈").withStyle(ChatFormatting.GRAY));
-                        index = 2;
-                    }
-                    if (getSio2().contains(Item.getId(hoveredItem))) {
-                        list1.add(1, Component.literal("SiO₂").withStyle(ChatFormatting.GRAY));
+                    } else if (pStack.getItem() instanceof ItemWithTooltip iTooltip &&
+                            !iTooltip.getTooltip().toFlatList().isEmpty()) {
                         index = 2;
                     }
                 }
@@ -105,8 +75,6 @@ public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingIn
                         }
                     });
                 }
-
-
 
                 for (CreativeModeTab creativemodetab : CreativeModeTabs.tabs()) {
                     if (!creativemodetab.hasSearchBar() && creativemodetab.contains(pStack)) {

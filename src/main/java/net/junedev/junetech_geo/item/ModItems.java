@@ -62,7 +62,7 @@ public class ModItems {
         public static final RegistryObject<Item> MULLITE_SHARD = ITEMS.register("mullite_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DUST_SALT_NACL = ITEMS.register("dust_salt_nacl",
-                () -> new ItemWithTooltip(new Item.Properties(), "NaCl"));
+                () -> new ItemWithTooltip(new Item.Properties(), "NaCl", true));
         public static final RegistryObject<Item> CHALK_STICK = ITEMS.register("chalk_stick",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIC_LIME = ITEMS.register("lithic_lime",

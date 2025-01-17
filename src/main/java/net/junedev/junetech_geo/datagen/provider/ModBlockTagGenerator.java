@@ -1,5 +1,6 @@
 package net.junedev.junetech_geo.datagen.provider;
 
+import net.junedev.junetech_geo.block.*;
 import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.util.ModTags;
@@ -19,6 +20,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        // TODO: Add appropiate blocks to tags below
+        //this.tag(ModTags.Blocks.caso4).add();
+        //this.tag(ModTags.Blocks.fe2o3).add();
+        //this.tag(ModTags.Blocks.hornblende).add();
+        //this.tag(ModTags.Blocks.kcl).add();
+        //this.tag(ModTags.Blocks.kclnacl).add();
+        //this.tag(ModTags.Blocks.kspar).add();
+        //this.tag(ModTags.Blocks.nacl).add();
+        //this.tag(ModTags.Blocks.olivine).add();
+        //this.tag(ModTags.Blocks.pspar).add();
+        //this.tag(ModTags.Blocks.sio2).add();
+
         this.tag(ModTags.Blocks.SEDIMENTARY)
                 .add(ModBlocks.LIMESTONE.get(),
                         ModBlocks.LIMESTONE_BLACK.get(),
