@@ -1,7 +1,7 @@
 package net.junedev.junetech_geo.block;
 
 import net.junedev.junetech_geo.block.tooltips.*;
-import net.junedev.junetech_geo.junetech_geo;
+import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, junetech_geo.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, JunetechGeo.MOD_ID);
 // geology \\
     public static final RegistryObject<Block> ADAKITE = registerBlock("adakite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.STONE)));
