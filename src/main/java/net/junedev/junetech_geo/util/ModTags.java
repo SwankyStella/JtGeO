@@ -1,6 +1,6 @@
 package net.junedev.junetech_geo.util;
 
-import net.junedev.junetech_geo.junetech_geo;
+import net.junedev.junetech_geo.JunetechGeo;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -20,14 +20,14 @@ public class ModTags {
 
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(junetech_geo.MOD_ID, name));
+            return BlockTags.create(new ResourceLocation(JunetechGeo.MOD_ID, name));
         }
     }
 
     public static class Items {
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(new ResourceLocation(junetech_geo.MOD_ID, name));
+            return ItemTags.create(new ResourceLocation(JunetechGeo.MOD_ID, name));
         }
     }
 }

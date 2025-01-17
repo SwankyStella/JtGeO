@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-16T22:19:12.3472421	Item Models: junetech_geo
+// 1.20.1	2025-01-16T13:30:44.4543105	Item Models: junetech_geo
 6d44e70931aca3f6bb50e8b796bef0eccae1fea5 assets/junetech_geo/models/item/adobe_brick.json
 80fc6c5d19a5bcc790dd8b96cb622ac170ab8ce2 assets/junetech_geo/models/item/amber_shard.json
 7b0e6038fa2633788d819c8ea73ee19acbcf5371 assets/junetech_geo/models/item/ametrine_shard.json
@@ -9,6 +9,11 @@
 cf7c561f2e9b9428737f3b833832f9b049efef76 assets/junetech_geo/models/item/bucket_of_lahar.json
 d8f88f9dcd0dc620f707aae6e73cd206ff64e578 assets/junetech_geo/models/item/bucket_of_mercury.json
 f4a46c91d58fcb2433157719a29d1dd155964b9e assets/junetech_geo/models/item/bucket_of_tar.json
+0ec3d1e92691aed0d0e2f86313f52779a80a53c2 assets/junetech_geo/models/item/cemented_calcite.json
+29f444600b653adcdc6d5725ac53dc15522f11ad assets/junetech_geo/models/item/cemented_hematite.json
+9f2df418ae987c84f942ead7ba5344b3dc9a0856 assets/junetech_geo/models/item/cemented_metaconglomerate.json
+453606b08b94c39b74ffad6c94f9fef865db1c5e assets/junetech_geo/models/item/cemented_siderite.json
+1f93ed06a52809348b7d44ed253b776dfef5f3c4 assets/junetech_geo/models/item/cemented_silica.json
 bd65eaf972bdb5bb024f15840dd96caa3475dc48 assets/junetech_geo/models/item/chalk_stick.json
 cb5a9db906b3c93d1ffcff3a28b5a129788e4d55 assets/junetech_geo/models/item/chisel_diamond.json
 f4e7dc946c559b42c751bc745fe48b52ba4a2155 assets/junetech_geo/models/item/chisel_iron.json
@@ -71,5 +76,4 @@ e47f42dcc599f289baea4e23ea84a1fb224eacda assets/junetech_geo/models/item/sand_pi
 91345afdc861a99928cd1ce9adb8d106eb5d9157 assets/junetech_geo/models/item/sand_pile_soul.json
 48d445c7d07b85f6831b4aaba6dddb2df5574578 assets/junetech_geo/models/item/silt_pile.json
 fda9ecc5788adccaa2369765a7b213af631fc0ed assets/junetech_geo/models/item/smoky_quartz_shard.json
-4b217b5e0d94ad8082bb0db6d0cebe9d67b095f2 assets/junetech_geo/models/item/soot_pile.json
 82167627021e9d1f7320a96201635671b7d3f3ff assets/junetech_geo/models/item/volcanic_ash_pile.json

@@ -1,7 +1,6 @@
 package net.junedev.junetech_geo.item;
 
-import net.junedev.junetech_geo.item.tooltips.NaClItem;
-import net.junedev.junetech_geo.junetech_geo;
+import net.junedev.junetech_geo.JunetechGeo;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -10,7 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, junetech_geo.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, JunetechGeo.MOD_ID);
 
        // for public static final RegistryObject<Item> VAR1 = ITEMS.register("var2",
          //       () -> new Item(new Item.Properties())); = (VAR1, var2)??? could this work?
@@ -63,7 +62,7 @@ public class ModItems {
         public static final RegistryObject<Item> MULLITE_SHARD = ITEMS.register("mullite_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DUST_SALT_NACL = ITEMS.register("dust_salt_nacl",
-                () -> new NaClItem(new Item.Properties()));
+                () -> new ItemWithTooltip(new Item.Properties(), "NaCl"));
         public static final RegistryObject<Item> CHALK_STICK = ITEMS.register("chalk_stick",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIC_LIME = ITEMS.register("lithic_lime",
