@@ -1,13 +1,12 @@
 {
   "required": true,
+  "package": "net.junedev.junetech_geo.mixin",
   "compatibilityLevel": "JAVA_17",
-  "minVersion": "0.8.7",
-  "package": "net.junedev.junetech_geo.mixins",
-  "refmap": "mixins.junetech_geo.refmap.json",
-  "mixins": [
+  "mixins": [],
+  "client": [
     "CreativeModeInventoryScreenMixin"
   ],
-  "client": [
-
-  ]
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
