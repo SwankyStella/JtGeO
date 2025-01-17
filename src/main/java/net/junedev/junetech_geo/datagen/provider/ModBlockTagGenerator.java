@@ -1,6 +1,5 @@
 package net.junedev.junetech_geo.datagen.provider;
 
-import net.junedev.junetech_geo.block.*;
 import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.util.ModTags;
