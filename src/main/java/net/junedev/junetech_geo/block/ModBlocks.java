@@ -1292,7 +1292,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
 // blocks of X \\
     public static final RegistryObject<Block> ALUMINUM_BLOCK = registerBlock("aluminum_block",
-        () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), "Al"));
     public static final RegistryObject<Block> AMETHYST_BLOCK = registerBlock("amethyst_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> AMETRINE_BLOCK = registerBlock("ametrine_block",

@@ -1,8 +1,10 @@
 {
     "creativetab.rocks": "June's Rocks",
     "creativetab.minerals": "June's Minerals",
-    "creativetab.features": "Other Features",
+    "creativetab.misc": "Other Features",
     "creativetab.geoitems": "June's Items",
+    "creativetab.cobblestones": "June's Cobblestones",
+    "creativetab.building_blocks_plus": "More Building Blocks",
     "block.minecraft.amethyst_block": "Amethyst Crystal",
     "block.minecraft.budding_amethyst": "Budding Amethyst Crystal",
     "block.minecraft.quartz_block": "Polished Quartz",
