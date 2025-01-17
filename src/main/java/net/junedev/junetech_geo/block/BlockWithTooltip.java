@@ -1,4 +1,4 @@
-package net.junedev.junetech_geo.block.tooltips;
+package net.junedev.junetech_geo.block;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

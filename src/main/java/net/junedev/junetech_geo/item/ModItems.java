@@ -1,6 +1,5 @@
 package net.junedev.junetech_geo.item;
 
-import net.junedev.junetech_geo.item.tooltips.NaClItem;
 import net.junedev.junetech_geo.JunetechGeo;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -63,7 +62,7 @@ public class ModItems {
         public static final RegistryObject<Item> MULLITE_SHARD = ITEMS.register("mullite_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DUST_SALT_NACL = ITEMS.register("dust_salt_nacl",
-                () -> new NaClItem(new Item.Properties()));
+                () -> new ItemWithTooltip(new Item.Properties(), "NaCl"));
         public static final RegistryObject<Item> CHALK_STICK = ITEMS.register("chalk_stick",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIC_LIME = ITEMS.register("lithic_lime",
