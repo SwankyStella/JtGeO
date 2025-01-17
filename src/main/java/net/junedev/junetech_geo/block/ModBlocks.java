@@ -13,6 +13,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
+import static net.junedev.junetech_geo.util.CompositionConstants.CASO4;
+
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, JunetechGeo.MOD_ID);
@@ -504,7 +506,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> GRITSTONE = registerBlock("gritstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> GYPSUM = registerBlock("gypsum",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "CaSO₄·H₂O", true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), CASO4, true));
     public static final RegistryObject<Block> GYPSUM_VARIANT_DARK = registerBlock("gypsum_variant_dark",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> GYPSUM_VARIANT_LIGHT = registerBlock("gypsum_variant_light",
@@ -1482,9 +1484,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ADOBE_REINFORCED = registerBlock("adobe_reinforced",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ALABASTER = registerBlock("alabaster",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "CaSO₄·H₂O", true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), CASO4, true));
     public static final RegistryObject<Block> ALABASTER_TILES = registerBlock("alabaster_tiles",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "CaSO₄·H₂O", true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), CASO4, true));
     public static final RegistryObject<Block> AMETHYST_BRICKS = registerBlock("amethyst_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> AMETHYST_CHISELED = registerBlock("amethyst_chiseled",
