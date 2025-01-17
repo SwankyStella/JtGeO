@@ -67,6 +67,8 @@ public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingIn
                     }
                 }
 
+                if (index > list1.toArray().length) index = list1.toArray().length;
+
                 if (flag2 && flag) {
                     int finalTooltipIndex = index;
                     this.visibleTags.forEach((p_205407_) -> {
