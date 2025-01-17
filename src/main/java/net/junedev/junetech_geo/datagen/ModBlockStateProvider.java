@@ -174,7 +174,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CHERT_NOVACULITE_COBBLESTONE);
         blockWithItem(ModBlocks.CHERT_NOVACULITE_POLISHED);
         blockWithItem(ModBlocks.CHERT_PIETERSITE);
-        blockWithItem(ModBlocks.CHALK_POLISHED);
         blockWithItem(ModBlocks.CHERT_RADIOLARIAN);
         blockWithItem(ModBlocks.CHERT_ROTTENSTONE);
         blockWithItem(ModBlocks.CHLORASTOLITE);
@@ -266,7 +265,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DOLOMITE_DOLOSILTITE);
         blockWithItem(ModBlocks.DOLOMITE_POLISHED);
         blockWithItem(ModBlocks.DRIPSTONE_COBBLESTONE);
-        blockWithItem(ModBlocks.DRIPSTONE_LARGE_BRICKS);
         blockWithItem(ModBlocks.DRIPSTONE_LARGE_BRICKS);
         blockWithItem(ModBlocks.DRIPSTONE_POLISHED);
         blockWithItem(ModBlocks.DRIPSTONE_SMALL_BRICKS);
