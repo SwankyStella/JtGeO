@@ -20,14 +20,15 @@ public class ModTags {
         public static final TagKey<Block> SECONDARY_REPLACEABLE = tag("secondary_replaceable");
         public static final TagKey<Block> TERTIARY_REPLACEABLE = tag("tertiary_replaceable");
 
+        // TODO: Tag names cannot contain special characters
         public static final TagKey<Block> caso4 = tag(CASO4);
         public static final TagKey<Block> fe2o3 = tag(FE2O3);
-        public static final TagKey<Block> hornblende = tag(HORNBLENDE);
+        public static final TagKey<Block> hornblende = tag(HBL);
         public static final TagKey<Block> kcl = tag(KCL);
         public static final TagKey<Block> kclnacl = tag(KCL_NACL);
         public static final TagKey<Block> kspar = tag(KSPAR);
         public static final TagKey<Block> nacl = tag(NACL);
-        public static final TagKey<Block> olivine = tag(OLIVINE);
+        public static final TagKey<Block> olivine = tag(OL);
         public static final TagKey<Block> pspar = tag(PSPAR);
         public static final TagKey<Block> sio2 = tag(SIO2);
 
@@ -37,7 +38,6 @@ public class ModTags {
     }
 
     public static class Items {
-
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(JunetechGeo.MOD_ID, name));
         }
