@@ -1,14 +1,16 @@
 package net.junedev.junetech_geo.datagen;
 
+import net.junedev.junetech_geo.block.tooltips.*;
 import net.junedev.junetech_geo.junetech_geo;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.util.ModTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -22,6 +24,41 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        for (Item item : BuiltInRegistries.ITEM) {
+            if (item instanceof BlockItem blockItem) {
+                Block block = blockItem.getBlock();
+                if (block.getClass() == CaSO4Block.class) {
+                    this.tag(ModTags.Blocks.caso4).add(block);
+                }
+                if (block.getClass() == Fe2O3Block.class) {
+                    this.tag(ModTags.Blocks.fe2o3).add(block);
+                }
+                if (block.getClass() == HornblendeBlock.class) {
+                    this.tag(ModTags.Blocks.hornblende).add(block);
+                }
+                if (block.getClass() == KClBlock.class) {
+                    this.tag(ModTags.Blocks.kcl).add(block);
+                }
+                if (block.getClass() == KClNaClBlock.class) {
+                    this.tag(ModTags.Blocks.kclnacl).add(block);
+                }
+                if (block.getClass() == KSparBlock.class) {
+                    this.tag(ModTags.Blocks.kspar).add(block);
+                }
+                if (block.getClass() == NaClBlock.class) {
+                    this.tag(ModTags.Blocks.nacl).add(block);
+                }
+                if (block.getClass() == OlivineBlock.class) {
+                    this.tag(ModTags.Blocks.olivine).add(block);
+                }
+                if (block.getClass() == PSparBlock.class) {
+                    this.tag(ModTags.Blocks.pspar).add(block);
+                }
+                if (block.getClass() == SiO2Block.class) {
+                    this.tag(ModTags.Blocks.sio2).add(block);
+                }
+            }
+        }
 
         this.tag(ModTags.Blocks.SEDIMENTARY)
                 .add(ModBlocks.LIMESTONE.get(),

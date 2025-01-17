@@ -1,14 +1,18 @@
 package net.junedev.junetech_geo;
 
 import com.mojang.logging.LogUtils;
+import net.junedev.junetech_geo.block.tooltips.*;
 import net.junedev.junetech_geo.item.ModCreativeModeTabs;
 import net.junedev.junetech_geo.item.ModItems;
 import net.junedev.junetech_geo.block.ModBlocks;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,6 +20,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static net.junedev.junetech_geo.util.CompositionIDs.getCompositionIDs;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(junetech_geo.MOD_ID)
@@ -39,7 +48,7 @@ public class junetech_geo {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        getCompositionIDs();
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
