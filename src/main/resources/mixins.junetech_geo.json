@@ -1,6 +1,7 @@
 {
   "required": true,
   "package": "net.junedev.junetech_geo.mixin",
+  "refmap": "mixins.junetech_geo.refmap.json",
   "compatibilityLevel": "JAVA_17",
   "mixins": [],
   "client": [
