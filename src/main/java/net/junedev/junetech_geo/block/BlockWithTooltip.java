@@ -22,13 +22,10 @@ public class BlockWithTooltip extends Block {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        if (displayBelowName)
-            pTooltip.add(1, Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
-        else
+        if (!displayBelowName)
             pTooltip.add(Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
-
 
     public Component getTooltip() {
         return Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY);
