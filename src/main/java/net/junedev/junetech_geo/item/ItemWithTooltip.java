@@ -23,7 +23,7 @@ public class ItemWithTooltip extends Item {
 
 	@Override
 	public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-		if (!displayBelowName)
+		if (!pFlag.isCreative() || !displayBelowName)
 			pTooltip.add(Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
 		super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
 	}
