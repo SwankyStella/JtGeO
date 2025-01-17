@@ -21,7 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 try {
                     basicItem(item.getId());
                 } catch (IllegalArgumentException ignored) {
-                    JunetechGeo.LOGGER.warn("Item without texture: {}", item.getId().toString());
+                    JunetechGeo.LOGGER.warn("Item without texture: {}", item.getId());
                 }
             }
         }
