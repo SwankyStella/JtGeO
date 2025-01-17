@@ -1,6 +1,6 @@
 package net.junedev.junetech_geo.item;
 
-import net.junedev.junetech_geo.junetech_geo;
+import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
@@ -15,12 +15,11 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, junetech_geo.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JunetechGeo.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> ROCKS = CREATIVE_MODE_TABS.register("rocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LIMESTONE.get()))
-                    .title(Component.translatable("creativetab.rocks").withStyle(ChatFormatting.GRAY
-                    ))
+                    .title(Component.translatable("creativetab.rocks").withStyle(ChatFormatting.GRAY))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(Blocks.STONE);
                         pOutput.accept(Blocks.DEEPSLATE);

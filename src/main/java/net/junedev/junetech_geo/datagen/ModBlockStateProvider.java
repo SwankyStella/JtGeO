@@ -1,7 +1,7 @@
 package net.junedev.junetech_geo.datagen;
 
 import net.junedev.junetech_geo.block.ModBlocks;
-import net.junedev.junetech_geo.junetech_geo;
+import net.junedev.junetech_geo.JunetechGeo;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, junetech_geo.MOD_ID, exFileHelper);
+        super(output, JunetechGeo.MOD_ID, exFileHelper);
     }
 
     @Override
