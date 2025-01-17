@@ -2,6 +2,7 @@ package net.junedev.junetech_geo.item;
 
 import net.junedev.junetech_geo.junetech_geo;
 import net.junedev.junetech_geo.block.ModBlocks;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,8 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> ROCKS = CREATIVE_MODE_TABS.register("rocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LIMESTONE.get()))
-                    .title(Component.translatable("creativetab.rocks"))
+                    .title(Component.translatable("creativetab.rocks").withStyle(ChatFormatting.GRAY
+                    ))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(Blocks.STONE);
                         pOutput.accept(Blocks.DEEPSLATE);

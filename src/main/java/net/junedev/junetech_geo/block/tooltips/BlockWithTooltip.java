@@ -10,19 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class HornblendeBlock extends Block {
-    public HornblendeBlock(Properties pProperties) {
-        super(pProperties);
-    }
-
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.literal("Ca₂(Mg,Fe,Al)₅(Al,Si)₈O₂₂(OH)₂").withStyle(ChatFormatting.GRAY));
-        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
-    }
-}
-
-/* public class BlockWithTooltip extends Block {
+public class BlockWithTooltip extends Block {
     private final String tooltip;
 
     public BlockWithTooltip(Properties pProperties, String pTooltip) {
@@ -33,6 +21,6 @@ public class HornblendeBlock extends Block {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
         pTooltip.add(Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
-        super.appendHoverText(pStack, pLevel, pTooltip, pFlag)
+        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
-}*/
+}
