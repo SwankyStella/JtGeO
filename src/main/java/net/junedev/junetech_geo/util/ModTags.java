@@ -19,6 +19,7 @@ public class ModTags {
         public static final TagKey<Block> PRIMARY_REPLACEABLE = tag("primary_replaceable");
         public static final TagKey<Block> SECONDARY_REPLACEABLE = tag("secondary_replaceable");
         public static final TagKey<Block> TERTIARY_REPLACEABLE = tag("tertiary_replaceable");
+        public static final TagKey<Block> DONTDATAGEN = tag("dont_datagen");
 
         // TODO: Tag names cannot contain special characters
         public static final TagKey<Block> caso4 = tag(CASO4);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "junetech_geo:block/rhodochrosite_banded"
+    "all": "junetech_geo:block/fulgurite_cluster"
   }
 }

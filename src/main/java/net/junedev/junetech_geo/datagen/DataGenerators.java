@@ -4,6 +4,7 @@ import net.junedev.junetech_geo.JunetechGeo;
 import net.junedev.junetech_geo.datagen.provider.ModBlockStateProvider;
 import net.junedev.junetech_geo.datagen.provider.ModBlockTagGenerator;
 import net.junedev.junetech_geo.datagen.provider.ModItemModelProvider;
+//import net.junedev.junetech_geo.datagen.provider.ModLootTableProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -24,7 +25,7 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         //generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
-        //generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
+    //    generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
