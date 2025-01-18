@@ -11,24 +11,26 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class ItemWithTooltip extends Item {
-	private final String tooltip;
-
+	private final Component tooltip;
 	private final boolean displayBelowName;
 
 	public ItemWithTooltip(Properties pProperties, String pTooltip, boolean pDisplayBelowName) {
 		super(pProperties);
-		this.tooltip = pTooltip;
+		this.tooltip = Component.literal(pTooltip).withStyle(ChatFormatting.GRAY);
 		this.displayBelowName = pDisplayBelowName;
 	}
 
 	@Override
 	public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-		if (!pFlag.isCreative() || !displayBelowName)
-			pTooltip.add(Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY));
+		pTooltip.add(this.tooltip);
 		super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
 	}
 
 	public Component getTooltip() {
-		return Component.literal(this.tooltip).withStyle(ChatFormatting.GRAY);
+		return this.tooltip;
+	}
+
+	public boolean displaysBelowName() {
+		return this.displayBelowName;
 	}
 }
