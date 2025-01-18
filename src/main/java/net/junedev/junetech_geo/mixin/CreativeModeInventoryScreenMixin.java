@@ -13,14 +13,19 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 
+/**
+ * Adds the tooltip above the list of tabs containing the item/block if specified
+ * @see BlockWithTooltip
+ * @see ItemWithTooltip
+ */
 @Mixin(CreativeModeInventoryScreen.class)
 public class CreativeModeInventoryScreenMixin {
     @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At("RETURN"))
     public void addTooltip(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
-        if (pStack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BlockWithTooltip blockWithTooltip) {
-            cir.getReturnValue().add(1, blockWithTooltip.getTooltip());
-        } else if (pStack.getItem() instanceof ItemWithTooltip itemWithTooltip) {
-            cir.getReturnValue().add(1, itemWithTooltip.getTooltip());
+        if (pStack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BlockWithTooltip block && block.displaysBellowName()) {
+            cir.getReturnValue().add(1, block.getTooltip());
+        } else if (pStack.getItem() instanceof ItemWithTooltip item && item.displaysBellowName()) {
+            cir.getReturnValue().add(1, item.getTooltip());
         }
     }
 }
