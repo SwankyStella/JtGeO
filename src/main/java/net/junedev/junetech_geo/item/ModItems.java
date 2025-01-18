@@ -7,6 +7,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import static net.junedev.junetech_geo.util.CompositionConstants.*;
+
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, JunetechGeo.MOD_ID);
@@ -62,7 +64,7 @@ public class ModItems {
         public static final RegistryObject<Item> MULLITE_SHARD = ITEMS.register("mullite_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DUST_SALT_NACL = ITEMS.register("dust_salt_nacl",
-                () -> new ItemWithTooltip(new Item.Properties(), "NaCl", true));
+                () -> new ItemWithTooltip(new Item.Properties(), NACL, true));
         public static final RegistryObject<Item> CHALK_STICK = ITEMS.register("chalk_stick",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIC_LIME = ITEMS.register("lithic_lime",
