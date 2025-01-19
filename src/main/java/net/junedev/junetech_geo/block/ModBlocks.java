@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static net.junedev.junetech_geo.util.CompositionConstants.*;
+import static net.junedev.junetech_geo.util.CompositionConstants.CASO4;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -138,7 +138,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CALCFLINTA = registerBlock("calcflinta",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CALTHEMITE = registerBlock("calthemite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> CARBONATITE_FENITE = registerBlock("carbonatite_fenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CARBONATITE_SOVITE = registerBlock("carbonatite_sovite",
@@ -152,7 +152,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CATACLASITE_POLISHED = registerBlock("cataclasite_polished",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CAVE_POPCORN = registerBlock("cave_popcorn",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> CHALCONATRONITE = registerBlock("chalconatronite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CHALK = registerBlock("chalk",
@@ -520,7 +520,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> GYPSUM_POLISHED = registerBlock("gypsum_polished",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> HALITE = registerBlock("halite",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), NACL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaCl", true));
     public static final RegistryObject<Block> HALITE_VARIANT_DIFFUSED = registerBlock("halite_variant_diffused",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> HALITE_VARIANT_LIGHT = registerBlock("halite_variant_light",
@@ -530,25 +530,25 @@ public class ModBlocks {
     public static final RegistryObject<Block> HALITE_VARIANT_WHITE = registerBlock("halite_variant_white",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> HALITE_HIMALAYAN_SALT = registerBlock("halite_himalayan_salt",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), NACL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaCl", true));
     public static final RegistryObject<Block> HALITE_BRICKS = registerBlock("halite_bricks",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), NACL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaCl", true));
     public static final RegistryObject<Block> HALITE_BRICKS_SMALL = registerBlock("halite_bricks_small",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> HALITE_POLISHED = registerBlock("halite_polished",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), NACL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaCl", true));
     public static final RegistryObject<Block> HELICTITE = registerBlock("helictite",
             () -> new DeadBushBlock(BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> HEMATITE_BLOCK = registerBlock("hematite_block",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), FE2O3, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "Fe₂O₃", true));
     public static final RegistryObject<Block> HORNBLENDE = registerBlock("hornblende",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), HBL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "Ca₂(Mg,Fe,Al)₅(Al,Si)₈O₂₂(OH)₂", true));
     public static final RegistryObject<Block> HORNBLENDE_BRICKS = registerBlock("hornblende_bricks",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), HBL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "Ca₂(Mg,Fe,Al)₅(Al,Si)₈O₂₂(OH)₂", true));
     public static final RegistryObject<Block> HORNBLENDE_BRICKS_SMALL = registerBlock("hornblende_bricks_small",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), HBL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "Ca₂(Mg,Fe,Al)₅(Al,Si)₈O₂₂(OH)₂", true));
     public static final RegistryObject<Block> HORNBLENDE_POLISHED = registerBlock("hornblende_polished",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), HBL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "Ca₂(Mg,Fe,Al)₅(Al,Si)₈O₂₂(OH)₂", true));
     public static final RegistryObject<Block> HORNFELS = registerBlock("hornfels",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> HYALOCLASITE = registerBlock("hyaloclasite",
@@ -820,15 +820,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SHALE_OIL = registerBlock("shale_oil",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> OLIGOCLASE = registerBlock("oligoclase",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaAlSi₃O₈·CaAl₂Si₂O₈", true));
     public static final RegistryObject<Block> OLIVINE = registerBlock("olivine",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), OL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "(Mg,Fe)₂·SiO₄", true));
     public static final RegistryObject<Block> OLIVINE_BRICKS = registerBlock("olivine_bricks",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), OL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "(Mg,Fe)₂·SiO₄", true));
     public static final RegistryObject<Block> OLIVINE_BRICKS_SMALL = registerBlock("olivine_bricks_small",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), OL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "(Mg,Fe)₂·SiO₄", true));
     public static final RegistryObject<Block> OLIVINE_POLISHED = registerBlock("olivine_polished",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), OL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "(Mg,Fe)₂·SiO₄", true));
     public static final RegistryObject<Block> OLIVINE_DUNITE = registerBlock("olivine_dunite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> OLIVINE_FORSTERITE = registerBlock("olivine_forsterite",
@@ -836,27 +836,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> OLIVINE_WEHRLITE = registerBlock("olivine_wehrlite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> SARDONYX = registerBlock("sardonyx",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), SIO2, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "SiO₂", true));
     public static final RegistryObject<Block> ONYX = registerBlock("onyx",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), SIO2, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "SiO₂", true));
     public static final RegistryObject<Block> ONYX_TILES = registerBlock("onyx_tiles",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), SIO2, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "SiO₂", true));
     public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR = registerBlock("orthoclase_feldspar",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
     public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR_BRICKS = registerBlock("orthoclase_feldspar_bricks",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
     public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR_BRICKS_SMALL = registerBlock("orthoclase_feldspar_bricks_small",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
     public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR_POLISHED = registerBlock("orthoclase_feldspar_polished",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
     public static final RegistryObject<Block> PLAGIOCLASE_FELDSPAR = registerBlock("plagioclase_feldspar",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaAlSi₃O₈·CaAl₂Si₂O₈", true));
     public static final RegistryObject<Block> PLAGIOCLASE_FELDSPAR_BRICKS = registerBlock("plagioclase_feldspar_bricks",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaAlSi₃O₈·CaAl₂Si₂O₈", true));
     public static final RegistryObject<Block> PLAGIOCLASE_FELDSPAR_BRICKS_SMALL = registerBlock("plagioclase_feldspar_bricks_small",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaAlSi₃O₈·CaAl₂Si₂O₈", true));
     public static final RegistryObject<Block> PLAGIOCLASE_FELDSPAR_POLISHED = registerBlock("plagioclase_feldspar_polished",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaAlSi₃O₈·CaAl₂Si₂O₈", true));
     public static final RegistryObject<Block> ORTHOPYROXENE = registerBlock("orthopyroxene",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> PELES_HAIR = registerBlock("peles_hair",
@@ -1020,7 +1020,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SANDSTONE_TURBIDITE = registerBlock("sandstone_turbidite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> SANIDINE = registerBlock("sanidine",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KSPAR, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
     public static final RegistryObject<Block> SCHIST_BLUE = registerBlock("schist_blue",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> SCHIST_BLUE_BRICKS = registerBlock("schist_blue_bricks",
@@ -1178,9 +1178,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SYENITE_SHONKINITE = registerBlock("syenite_shonkinite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> SYLVINITE = registerBlock("sylvinite",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KCL_NACL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "KCl·(NaCl)₂", true));
     public static final RegistryObject<Block> SYLVITE_BLOCK = registerBlock("sylvite_block",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), KCL, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "KCl", true));
     public static final RegistryObject<Block> TACHYLITE = registerBlock("tachylite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> TACONITE = registerBlock("taconite",
@@ -1190,7 +1190,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEKTITE = registerBlock("tektite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> TEKTITE_COESITE = registerBlock("tektite_coesite",
-            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).sound(SoundType.AMETHYST), SIO2, true));
+            () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).sound(SoundType.AMETHYST), "SiO₂", true));
     public static final RegistryObject<Block> TEKTITE_DARWIN_GLASS = registerBlock("tektite_darwin_glass",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> TEKTITE_IMPACT_BRECCIA = registerBlock("tektite_impact_breccia",
@@ -1293,7 +1293,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
 // blocks of X \\
     public static final RegistryObject<Block> ALUMINUM_BLOCK = registerBlock("aluminum_block",
-        () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), AL, true));
+        () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), "Al", true));
     public static final RegistryObject<Block> AMETHYST_BLOCK = registerBlock("amethyst_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> AMETRINE_BLOCK = registerBlock("ametrine_block",
@@ -2162,17 +2162,26 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> DUMORTIERITE_BRICKS = registerBlock("dumortierite_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> DUMORTIERITE_PILLAR = registerBlock("dumortierite_pillar",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> DUMORTIERITE_CHISELED = registerBlock("dumortierite_chiseled",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> DUMORTIERITE_POLISHED = registerBlock("dumortierite_polished",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> IDDINGSITE = registerBlock("iddingsite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> SOAPSTONE_COBBLESTONE = registerBlock("soapstone_cobblestone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> FULGURITE_CLUSTER = registerBlock("fulgurite_cluster",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> AVENTURINE_SMALL_BUD = registerBlock("aventurine_small_bud",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

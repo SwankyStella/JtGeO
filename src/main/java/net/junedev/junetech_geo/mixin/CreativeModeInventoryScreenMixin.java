@@ -20,12 +20,16 @@ import java.util.List;
  */
 @Mixin(CreativeModeInventoryScreen.class)
 public class CreativeModeInventoryScreenMixin {
-    @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At("RETURN"))
+    @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At(value = "RETURN", ordinal = 1))
     public void addTooltip(ItemStack pStack, CallbackInfoReturnable<List<Component>> cir) {
-        if (pStack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BlockWithTooltip block && block.displaysBellowName()) {
-            cir.getReturnValue().add(1, block.getTooltip());
-        } else if (pStack.getItem() instanceof ItemWithTooltip item && item.displaysBellowName()) {
-            cir.getReturnValue().add(1, item.getTooltip());
+        if (pStack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BlockWithTooltip blockWithTooltip && blockWithTooltip.displaysBelowName()) {
+            Component component = blockWithTooltip.getTooltip();
+            cir.getReturnValue().removeIf(c -> c.equals(component));
+            cir.getReturnValue().add(1, component);
+        } else if (pStack.getItem() instanceof ItemWithTooltip itemWithTooltip && itemWithTooltip.displaysBelowName()) {
+            Component component = itemWithTooltip.getTooltip();
+            cir.getReturnValue().removeIf(c -> c.equals(component));
+            cir.getReturnValue().add(1, component);
         }
     }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "junetech_geo:block/salt_block",
+    "east": "junetech_geo:block/salt_flat_side",
+    "north": "junetech_geo:block/salt_flat_side",
+    "particle": "junetech_geo:block/salt_block",
+    "south": "junetech_geo:block/salt_flat_side",
+    "up": "junetech_geo:block/salt_flat_top",
+    "west": "junetech_geo:block/salt_flat_side"
+  }
+}
