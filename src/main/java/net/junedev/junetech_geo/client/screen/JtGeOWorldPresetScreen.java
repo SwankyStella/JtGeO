@@ -1,50 +1,45 @@
 package net.junedev.junetech_geo.client.screen;
 
-import net.junedev.junetech_geo.worldgen.JtGeOChunkGenerator;
-import net.junedev.junetech_geo.worldgen.settings.Settings;
+import net.junedev.junetech_geo.worldgen.settings.StrataOptions;
+import net.junedev.junetech_geo.worldgen.settings.WorldStrataOptions;
 import net.minecraft.client.OptionInstance;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.OptionsList;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.worldselection.CreateWorldScreen;
-import net.minecraft.client.gui.screens.worldselection.WorldCreationContext;
+import net.minecraft.client.gui.screens.worldselection.WorldCreationUiState;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.RegisterPresetEditorsEvent;
-import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 
 @OnlyIn(Dist.CLIENT)
 public class JtGeOWorldPresetScreen extends Screen {
     private final CreateWorldScreen parent;
-    private final WorldCreationContext context;
+    private final WorldCreationUiState state;
 
     private OptionsList options;
     private OptionInstance<Boolean> test;
 
-    public JtGeOWorldPresetScreen(CreateWorldScreen parent, WorldCreationContext context) {
+    public JtGeOWorldPresetScreen(CreateWorldScreen parent, WorldCreationUiState state) {
         super(Component.translatable("junetech_geo.tooltip.create_world.title"));
 
         this.parent = parent;
-        this.context = context;
+        this.state = state;
     }
 
     @Override
     protected void init() {
         assert minecraft != null;
 
-        if (!(context.selectedDimensions().overworld() instanceof JtGeOChunkGenerator chunkGenerator))
-            throw new IllegalArgumentException("chunk generator " + context.selectedDimensions().overworld() + " must be instance of JtGeoChunkGenerator. This can be configured in data/<namespace>/worldgen/world_preset/<preset_name>.json");
-
-        Settings settings = chunkGenerator.settings();
+        StrataOptions strataOptions = getCurrentStrataOptions();
 
         options = new OptionsList(minecraft, width, height, 32, height-32, 25);
 
         options.addBig(
-                test = OptionInstance.createBoolean("junetech_geo.create_world.test", settings.test(), val -> {})
+                test = OptionInstance.createBoolean("junetech_geo.create_world.test", strataOptions.test(), val -> {})
         );
 
         addWidget(options);
@@ -59,11 +54,20 @@ public class JtGeOWorldPresetScreen extends Screen {
     }
 
     private void applySettings() {
-        if (context.selectedDimensions().overworld() instanceof JtGeOChunkGenerator generator) {
-            generator.applySettings(old -> new Settings(
-                    test.get()
-            ));
-        }
+        state.setSettings(state.getSettings().withOptions(worldOptions -> {
+            WorldStrataOptions.from(worldOptions).setStrataOptions(this::getNewStrataOptions);
+            return worldOptions;
+        }));
+    }
+
+    private StrataOptions getNewStrataOptions(StrataOptions old) {
+        return new StrataOptions(
+                test.get()
+        );
+    }
+
+    private StrataOptions getCurrentStrataOptions() {
+        return WorldStrataOptions.from(state.getSettings().options()).getStrataOptions();
     }
 
     @Override
@@ -78,10 +82,5 @@ public class JtGeOWorldPresetScreen extends Screen {
         options.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
         pGuiGraphics.drawCenteredString(font, title, width/2, 8, 16777215);
         super.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
-    }
-
-    @ApiStatus.Internal
-    public static void register(RegisterPresetEditorsEvent event){
-        event.register(JtGeOChunkGenerator.DEFAULT_WORLD_PRESET, JtGeOWorldPresetScreen::new);
     }
 }

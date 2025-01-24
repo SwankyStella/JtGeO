@@ -1,4 +1,4 @@
-package net.junedev.junetech_geo.mixin;
+package net.junedev.junetech_geo.mixin.client;
 
 import net.junedev.junetech_geo.block.BlockWithTooltip;
 import net.junedev.junetech_geo.item.ItemWithTooltip;
@@ -6,6 +6,8 @@ import net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -18,6 +20,7 @@ import java.util.List;
  * @see BlockWithTooltip
  * @see ItemWithTooltip
  */
+@OnlyIn(Dist.CLIENT)
 @Mixin(CreativeModeInventoryScreen.class)
 public class CreativeModeInventoryScreenMixin {
     @Inject(method = "getTooltipFromContainerItem(Lnet/minecraft/world/item/ItemStack;)Ljava/util/List;", at = @At(value = "RETURN", ordinal = 1))
