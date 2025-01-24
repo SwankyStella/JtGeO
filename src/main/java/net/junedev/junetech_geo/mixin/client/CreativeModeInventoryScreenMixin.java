@@ -15,6 +15,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 
+/**
+ * Adds the tooltip above the list of tabs containing the item/block if specified
+ * @see BlockWithTooltip
+ * @see ItemWithTooltip
+ */
 @OnlyIn(Dist.CLIENT)
 @Mixin(CreativeModeInventoryScreen.class)
 public class CreativeModeInventoryScreenMixin {

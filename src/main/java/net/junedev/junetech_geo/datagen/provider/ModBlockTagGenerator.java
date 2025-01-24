@@ -5,9 +5,12 @@ import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -16,6 +19,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     public ModBlockTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, JunetechGeo.MOD_ID, existingFileHelper);
     }
+
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
@@ -29,156 +33,164 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         //this.tag(ModTags.Blocks.nacl).add();
         //this.tag(ModTags.Blocks.olivine).add();
         //this.tag(ModTags.Blocks.pspar).add();
-        //this.tag(ModTags.Blocks.sio2).add();
 
         this.tag(ModTags.Blocks.SEDIMENTARY)
-                .add(ModBlocks.LIMESTONE.get(),
-                        ModBlocks.LIMESTONE_BLACK.get(),
-                        ModBlocks.LIMESTONE_FOSSILIFEROUS.get(),
-                        ModBlocks.LIMESTONE_COQUINA.get(),
-                        ModBlocks.CHALK.get(),
-                        ModBlocks.CHERT.get(),
-                        ModBlocks.MUDSTONE.get(),
-                        ModBlocks.SILTSTONE.get(),
-                        ModBlocks.SHALE.get(),
-                        ModBlocks.SHALE_HAKATAI.get(),
-                        Blocks.SANDSTONE,
-                        Blocks.RED_SANDSTONE,
-                        ModBlocks.BRECCIA.get());
+                .addTag(ModTags.Blocks.SED_CHEMICAL)
+                .addTag(ModTags.Blocks.SED_CLASTIC);
 
         this.tag(ModTags.Blocks.METAMORPHIC)
-                .add(Blocks.DEEPSLATE,
-                        ModBlocks.SCHIST_BLUE.get(),
-                        ModBlocks.SCHIST_GREEN.get(),
-                        ModBlocks.ANTHRACITE.get(),
-                        ModBlocks.GNEISS.get(),
-                        ModBlocks.METACONGLOMERATE.get(),
-                        ModBlocks.PHYLLITE.get(),
-                        ModBlocks.QUARTZITE.get(),
-                        ModBlocks.SOAPSTONE.get(),
-                        ModBlocks.SERPENTINE.get(),
-                        ModBlocks.MARBLE.get());
+                .addTag(ModTags.Blocks.META_FOLIATED)
+                .addTag(ModTags.Blocks.META_NONFOLIATED);
 
         this.tag(ModTags.Blocks.IGNEOUS)
-                .add(Blocks.ANDESITE,
-                    Blocks.GRANITE,
-                    Blocks.DIORITE,
-                    Blocks.TUFF,
-                    Blocks.BASALT,
-                    Blocks.OBSIDIAN,
-                    Blocks.SMOOTH_BASALT,
-                    ModBlocks.RHYOLITE.get());
+                .addTag(ModTags.Blocks.GRANITE)
+                .addTag(ModTags.Blocks.FELSIC_INTRUSIVE)
+                .addTag(ModTags.Blocks.FELSIVE_EXTRUSIVE)
+                .addTag(ModTags.Blocks.INTERMEDIATE_INTRUSIVE)
+                .addTag(ModTags.Blocks.INTERMEDIATE_EXTRUSIVE)
+                .addTag(ModTags.Blocks.MAFIC_INTRUSIVE)
+                .addTag(ModTags.Blocks.MAFIC_EXTRUSIVE)
+                .addTag(ModTags.Blocks.ULTRAMAFIC_INTRUSIVE)
+                .addTag(ModTags.Blocks.ULTRAMAFIC_EXTRUSIVE);
 
-        this.tag(ModTags.Blocks.DONTDATAGEN)
-                .add(ModBlocks.CAVE_POPCORN.get(),
-                        ModBlocks.CALTHEMITE.get(),
-                        ModBlocks.WHITE_SMOKER_LARGE.get(),
-                        ModBlocks.WHITE_SMOKER_SMALL.get(),
-                        ModBlocks.BLACK_SMOKER_LARGE.get(),
-                        ModBlocks.BLACK_SMOKER_SMALL.get(),
-                        ModBlocks.ANTHODITE_FLOWER.get(),
-                        ModBlocks.FLOWSTONE_TIP.get(),
-                        ModBlocks.FLOWSTONE_MIDDLE.get(),
-                        ModBlocks.FLOWSTONE_TIP.get(),
-                        ModBlocks.HELICTITE.get(),
-                        ModBlocks.FULGURITE_CLUSTER.get(),
-                        ModBlocks.QUARTZ_SMALL_BUD.get(),
-                        ModBlocks.QUARTZ_MEDIUM_BUD.get(),
-                        ModBlocks.QUARTZ_LARGE_BUD.get(),
-                        ModBlocks.QUARTZ_CLUSTER.get(),
-                        ModBlocks.CITRINE_SMALL_BUD.get(),
-                        ModBlocks.CITRINE_MEDIUM_BUD.get(),
-                        ModBlocks.CITRINE_LARGE_BUD.get(),
-                        ModBlocks.CITRINE_CLUSTER.get(),
-                        ModBlocks.AMETRINE_SMALL_BUD.get(),
-                        ModBlocks.AMETRINE_MEDIUM_BUD.get(),
-                        ModBlocks.AMETRINE_LARGE_BUD.get(),
-                        ModBlocks.AVENTURINE_SMALL_BUD.get(),
-                        ModBlocks.AVENTURINE_MEDIUM_BUD.get(),
-                        ModBlocks.AVENTURINE_LARGE_BUD.get(),
-                        ModBlocks.AVENTURINE_CLUSTER.get(),
-                        ModBlocks.BLOODSTONE_SMALL_BUD.get(),
-                        ModBlocks.BLOODSTONE_MEDIUM_BUD.get(),
-                        ModBlocks.BLOODSTONE_LARGE_BUD.get(),
-                        ModBlocks.BLOODSTONE_CLUSTER.get(),
-                        ModBlocks.DUMORTIERITE_SMALL_BUD.get(),
-                        ModBlocks.DUMORTIERITE_MEDIUM_BUD.get(),
-                        ModBlocks.DUMORTIERITE_LARGE_BUD.get(),
-                        ModBlocks.DUMORTIERITE_CLUSTER.get(),
-                        ModBlocks.PRASIOLITE_SMALL_BUD.get(),
-                        ModBlocks.PRASIOLITE_MEDIUM_BUD.get(),
-                        ModBlocks.PRASIOLITE_LARGE_BUD.get(),
-                        ModBlocks.PRASIOLITE_CLUSTER.get(),
-                        ModBlocks.SMOKY_SMALL_BUD.get(),
-                        ModBlocks.SMOKY_MEDIUM_BUD.get(),
-                        ModBlocks.SMOKY_LARGE_BUD.get(),
-                        ModBlocks.SMOKY_CLUSTER.get(),
-                        ModBlocks.ROSE_SMALL_BUD.get(),
-                        ModBlocks.ROSE_MEDIUM_BUD.get(),
-                        ModBlocks.ROSE_LARGE_BUD.get(),
-                        ModBlocks.ROSE_CLUSTER.get(),
-                        ModBlocks.TORCH_ALUMINUM.get(),
-                        ModBlocks.TORCH_BARIUM.get(),
-                        ModBlocks.TORCH_CALCIUM.get(),
-                        ModBlocks.TORCH_COPPER.get(),
-                        ModBlocks.TORCH_IRON.get(),
-                        ModBlocks.TORCH_LITHIUM.get(),
-                        ModBlocks.TORCH_MAGNESIUM.get(),
-                        ModBlocks.TORCH_NITRE.get(),
-                        ModBlocks.TORCH_SALT_NACL.get(),
-                        ModBlocks.TORCH_STRONTIUM.get(),
-                        ModBlocks.TORCH_SYLVITE.get(),
-                        ModBlocks.SELENITE_CRYSTAL.get(),
-                        ModBlocks.ARAGONITE_CRYSTAL.get(),
-                        ModBlocks.SALT_FLAT.get(),
-                        ModBlocks.BASALT_LAYERED.get(),
-                        ModBlocks.RHODOCHROSITE_BANDED.get(),
-                        ModBlocks.TRINITITE.get(),
-                        ModBlocks.TRAVERTINE_PEACH.get(),
+        this.tag(ModTags.Blocks.PRIMARY_REPLACEABLE)
+                .add(Blocks.STONE,
+                        Blocks.DEEPSLATE,
+                        Blocks.STONE_SLAB,
+                        Blocks.NETHERRACK);
+
+        this.tag(ModTags.Blocks.SECONDARY_REPLACEABLE)
+                .add(Blocks.GRANITE,
+                        Blocks.ANDESITE,
+                        Blocks.DIORITE,
+                        Blocks.TUFF);
+
+        this.tag(ModTags.Blocks.TERTIARY_REPLACEABLE)
+                .add(Blocks.SMOOTH_BASALT,
+                        Blocks.CALCITE,
+                        Blocks.GRAVEL,
+                        Blocks.CLAY,
+                        Blocks.DIRT);
+
+        this.tag(ModTags.Blocks.HARD_STONE_TOOL_MATERIALS) //rocks with a hardness of 7+
+                .addTag(ModTags.Blocks.sio2)
+                .add(Blocks.GRANITE,
+                        Blocks.ANDESITE,
+                        Blocks.DIORITE,
+                        ModBlocks.ORTHOQUARTZITE.get(),
+                        ModBlocks.EMERY.get(),
+                        ModBlocks.CORUNDITE.get(),
+                        ModBlocks.QUARTZITE.get(),
+                        ModBlocks.QUARTZOLITE.get(),
+                        ModBlocks.QUARTZITE_COBBLESTONE.get(),
+                        ModBlocks.RHYOLITE.get(),
+                        ModBlocks.PERIDOTITE.get(),
+                        ModBlocks.TONALITE.get(),
+                        ModBlocks.SANDSTONE_GREYWACKE.get(),
+                        ModBlocks.SANDSTONE_GREYWACKE_COBBLESTONE.get(),
+                        ModBlocks.MONZONITE.get(),
+                        ModBlocks.MONZODIORITE.get());
+
+
+        this.tag(ModTags.Blocks.SED_CLASTIC)
+                .addTag(ModTags.Blocks.SANDSTONE)
+                .add(ModBlocks.CONGLOMERATE.get(),
+                        ModBlocks.BRECCIA.get(),
+                        ModBlocks.BRECCIA_DALLASITE.get(),
+                        Blocks.SANDSTONE,
+                        Blocks.RED_SANDSTONE,
+                        ModBlocks.SANDSTONE_QUARTZ_ARENITE.get(),
+                        ModBlocks.SANDSTONE_FELDSPATHIC_ARENITE.get(),
+                        ModBlocks.SANDSTONE_GREYWACKE.get(),
+                        ModBlocks.SANDSTONE_ARKOSE.get(),
+                        ModBlocks.SANDSTONE_ITACOLUMNITE.get(),
+                        ModBlocks.SANDSTONE_GANISTER.get(),
+                        ModBlocks.SANDSTONE_GANISTER_ROOT_TRACED.get(),
+                        ModBlocks.SANDSTONE_TURBIDITE.get(),
+                        ModBlocks.LACUSTRINE.get(),
+                        ModBlocks.BAUXITE_LATERITE.get(),
+                        ModBlocks.SHALE.get(),
+                        ModBlocks.SHALE_HAKATAI.get(),
+                        ModBlocks.MUDSTONE.get(),
+                        ModBlocks.SILTSTONE.get(),
+                        ModBlocks.DIAMICTITE.get(),
+                        ModBlocks.DIAMICTITE_TILLITE.get(),
+                        ModBlocks.ARGILLITE.get(),
+                        ModBlocks.ARGILLITE_MARINITE.get());
+
+
+        this.tag(ModTags.Blocks.SED_CHEMICAL)
+                .add(ModBlocks.LIMESTONE.get(),
+                        ModBlocks.LIMESTONE_FOSSILIFEROUS.get(),
+                        ModBlocks.LIMESTONE_KARST.get(),
+                        ModBlocks.LIMESTONE_COQUINA.get(),
+                        ModBlocks.LIMESTONE_AEOLIANITE.get(),
+                        ModBlocks.LIMESTONE_BLACK.get(),
+                        ModBlocks.LIMESTONE_OOLITIC.get(),
+                        ModBlocks.LIMESTONE_MOONMILK.get(),
+                        ModBlocks.DOLOMITE.get(),
+                        ModBlocks.DIATOMITE.get(),
+                        ModBlocks.CHERT_DIATOMIC.get(),
+                        ModBlocks.CHERT_RADIOLARIAN.get(),
+                        ModBlocks.TUFA.get(),
                         ModBlocks.TRAVERTINE_LIME.get(),
-                        ModBlocks.STROMATOLITE.get(),
-                        ModBlocks.PETRIFIED_LOG.get(),
-                        ModBlocks.PETRIFIED_LOG_STRIPPED.get(),
-                        ModBlocks.PETRIFIED_LOG_OPALIZED.get(),
-                        ModBlocks.PETRIFIED_LOG_STRIPPED_OPALIZED.get(),
-                        ModBlocks.PERMAFROST_SOIL.get(),
-                        ModBlocks.SANDSTONE_BASALT.get(),
-                        ModBlocks.SANDSTONE_BASALT_CUT.get(),
-                        ModBlocks.SANDSTONE_CASSITERITE.get(),
-                        ModBlocks.SANDSTONE_CASSITERITE_CUT.get(),
-                        ModBlocks.SANDSTONE_SODALITE.get(),
-                        ModBlocks.SANDSTONE_SODALITE_CUT.get(),
-                        ModBlocks.SANDSTONE_GRANITE.get(),
-                        ModBlocks.SANDSTONE_GRANITE_CUT.get(),
-                        ModBlocks.SANDSTONE_K_FELDSPAR.get(),
-                        ModBlocks.SANDSTONE_K_FELDSPAR_CUT.get(),
-                        ModBlocks.SANDSTONE_PLAGIOCLASE_FELDSPAR.get(),
-                        ModBlocks.SANDSTONE_PLAGIOCLASE_FELDSPAR_CUT.get(),
-                        ModBlocks.SANDSTONE_GLAUCONITE.get(),
-                        ModBlocks.SANDSTONE_GLAUCONITE_CUT.get(),
-                        ModBlocks.IVORY_BONE_BLOCK.get(),
-                        ModBlocks.IVORY_WEATHERED_BONE_BLOCK.get(),
-                        ModBlocks.AMETRINE_CHISELED.get(),
-                        ModBlocks.AMETRINE_PILLAR.get(),
-                        ModBlocks.AMETHYST_CHISELED.get(),
-                        ModBlocks.AMETHYST_PILLAR.get(),
-                        ModBlocks.CITRINE_CHISELED.get(),
-                        ModBlocks.CITRINE_PILLAR.get(),
-                        ModBlocks.AVENTURINE_CHISELED.get(),
-                        ModBlocks.AVENTURINE_PILLAR.get(),
-                        ModBlocks.BLOODSTONE_CHISELED.get(),
-                        ModBlocks.BLOODSTONE_PILLAR.get(),
-                        ModBlocks.DUMORTIERITE_CHISELED.get(),
-                        ModBlocks.DUMORTIERITE_PILLAR.get(),
-                        ModBlocks.PRASIOLITE_CHISELED.get(),
-                        ModBlocks.PRASIOLITE_PILLAR.get(),
-                        ModBlocks.SMOKY_CHISELED.get(),
-                        ModBlocks.SMOKY_PILLAR.get(),
-                        ModBlocks.ROSE_CHISELED.get(),
-                        ModBlocks.OBSIDIAN_GLASS_PANE.get(),
-                        ModBlocks.URANIUM_GLASS_PANE.get(),
-                        ModBlocks.ROSE_PILLAR.get());
+                        ModBlocks.TRAVERTINE_PEACH.get(),
+                        ModBlocks.GYPSUM.get(),
+                        ModBlocks.HALITE.get(),
+                        ModBlocks.HALITE_HIMALAYAN_SALT.get(),
+                        ModBlocks.BITUMEN.get(),
+                        ModBlocks.BITUMEN_SHUNGITE.get(),
+                        ModBlocks.BITUMEN_RESINITE.get(),
+                        ModBlocks.PYROBITUMEN.get(),
+                        ModBlocks.LIGNITE.get(),
+                        ModBlocks.LIGNITE_RESINITE.get(),
+                        ModBlocks.LIGNITE_JET.get(),
+                        ModBlocks.BAUXITE_CALCAREOUS.get(),
+                        ModBlocks.BAUXITE_KARST.get());
 
+        this.tag(ModTags.Blocks.GRANITE)
+                .add(Blocks.GRANITE,
+                        ModBlocks.GRANITE_APPINITE.get(),
+                        ModBlocks.GRANITE_CHARNOCKITE.get(),
+                        ModBlocks.GRANITE_BLUE.get(),
+                        ModBlocks.GRANITE_CHARNOCKITE_MANGERITE.get(),
+                        ModBlocks.GRANITE_CHARNOCKITE_ENDERBITE.get(),
+                        ModBlocks.GRANITE_LUXULLIANITE.get(),
+                        ModBlocks.GRANITE_PEGMATITE.get(),
+                        ModBlocks.GREISENS_PEGMATITE.get(),
+                        ModBlocks.GREISENS_CONTACT.get(),
+                        ModBlocks.GRANITE_UNAKITE.get(),
+                        ModBlocks.GRANITE_RAPAKIVI.get(),
+                        ModBlocks.GRANITE_GOLD.get(),
+                        ModBlocks.GRANITE_WHITE.get(),
+                        ModBlocks.GRANITE_PORPHYRY.get(),
+                        ModBlocks.GRANODIORITE.get(),
+                        ModBlocks.MONZOGRANITE.get());
 
+        this.tag(ModTags.Blocks.sio2)
+                .add(Blocks.QUARTZ_BLOCK,
+                        Blocks.AMETHYST_BLOCK,
+                        ModBlocks.QUARTZ_CRYSTAL_BLOCK.get(),
+                        ModBlocks.CITRINE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.AMETRINE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.AVENTURINE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.BLOODSTONE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.DUMORTIERITE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.PRASIOLITE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.SMOKY_CRYSTAL_BLOCK.get(),
+                        ModBlocks.ROSE_CRYSTAL_BLOCK.get(),
+                        ModBlocks.CHERT.get(),
+                        ModBlocks.CHERT_COBBLESTONE.get(),
+                        ModBlocks.CHERT_CHALCEDONY.get(),
+                        ModBlocks.CHERT_CHALCEDONY_COBBLESTONE.get(),
+                        ModBlocks.CHERT_AGATE.get(),
+                        ModBlocks.CHERT_JASPER.get(),
+                        ModBlocks.CHERT_FLINTSTONE.get(),
+                        ModBlocks.TEKTITE_LECHATELIERITE.get(),
+                        ModBlocks.TEKTITE_COESITE.get(),
+                        ModBlocks.FULGURITE.get(),
+                        ModBlocks.OPAL_BLOCK.get(),
+                        ModBlocks.OPAL_BLOCK_BOULDER.get(),
+                        ModBlocks.OPAL_BLOCK_COMMON.get());
     }
 }

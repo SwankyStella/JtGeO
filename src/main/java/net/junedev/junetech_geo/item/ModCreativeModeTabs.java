@@ -316,9 +316,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CORUNDUM_RUBBLE.get());
                         pOutput.accept(ModBlocks.FORDITE.get());
                         pOutput.accept(ModBlocks.FULGURITE.get());
+                        pOutput.accept(ModBlocks.FULGURITE_CLUSTER.get());
                         pOutput.accept(ModBlocks.HEMATITE_BLOCK.get());
                         pOutput.accept(ModBlocks.HYDRACEUM.get());
                         pOutput.accept(ModBlocks.HYPERSTHENE.get());
+                        pOutput.accept(ModBlocks.IDDINGSITE.get());
                         pOutput.accept(ModBlocks.TEKTITE_LECHATELIERITE.get());
                         pOutput.accept(ModBlocks.LIGNITE.get());
                         pOutput.accept(ModBlocks.LIGNITE_RESINITE.get());
