@@ -6,11 +6,9 @@
     "creativetab.cobblestones": "June's Cobblestones",
     "creativetab.building_blocks_plus": "More Building Blocks",
 
-    "generator.junetech_geo.junetech_geo": "Junetech Geo",
-
-    "junetech_geo.tooltip.create_world.title": "Junetech Geo World Settings",
-
-    "junetech_geo.create_world.test": "Test",
+    "junetech_geo.select_world.custom_strata_enabled": "Custom Strata: Enabled",
+    "junetech_geo.select_world.custom_strata_disabled": "Custom Strata: Disabled",
+    "junetech_geo.select_world.customise_strata": "Customize Strata",
 
     "block.minecraft.amethyst_block": "Amethyst Crystal",
     "block.minecraft.budding_amethyst": "Budding Amethyst Crystal",
