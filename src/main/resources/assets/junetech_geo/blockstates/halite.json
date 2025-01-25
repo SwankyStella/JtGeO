@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "junetech_geo:block/halite"},
+      {"model": "junetech_geo:block/halite_variant_pink"},
+      {"model": "junetech_geo:block/halite_variant_diffused"}
+    ]
+  }
+}

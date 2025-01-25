@@ -1,15 +1,6 @@
 {
   "values": [
-    "minecraft:deepslate",
-    "junetech_geo:schist_blue",
-    "junetech_geo:schist_green",
-    "junetech_geo:anthracite",
-    "junetech_geo:gneiss",
-    "junetech_geo:metaconglomerate",
-    "junetech_geo:phyllite",
-    "junetech_geo:quartzite",
-    "junetech_geo:soapstone",
-    "junetech_geo:serpentine",
-    "junetech_geo:marble"
+    "#junetech_geo:meta_foliated",
+    "#junetech_geo:meta_nonfoliated"
   ]
 }

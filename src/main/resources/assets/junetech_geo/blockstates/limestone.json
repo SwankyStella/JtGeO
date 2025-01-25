@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "junetech_geo:block/limestone_variant_horizontal"},
+      {"model": "junetech_geo:block/limestone_variant_bedded"},
+      {"model": "junetech_geo:block/limestone_variant_unaltered"}
+    ]
+  }
+}

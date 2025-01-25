@@ -1,7 +1,7 @@
 package net.junedev.junetech_geo.util;
 
 public class CompositionConstants {
-    public static final String CASO4 = "CaSO4H2O";
+    public static final String CASO4 = "caseoh";
     public static final String FE2O3 = "fe2o3";
     public static final String HBL = "hornblende";
     public static final String KCL = "kcl";

@@ -1,12 +1,13 @@
 {
   "values": [
-    "minecraft:andesite",
-    "minecraft:granite",
-    "minecraft:diorite",
-    "minecraft:tuff",
-    "minecraft:basalt",
-    "minecraft:obsidian",
-    "minecraft:smooth_basalt",
-    "junetech_geo:rhyolite"
+    "#junetech_geo:granite",
+    "#junetech_geo:felsic_intrusive",
+    "#junetech_geo:felsic_extrusive",
+    "#junetech_geo:intermediate_intrusive",
+    "#junetech_geo:intermediate_extrusive",
+    "#junetech_geo:mafic_intrusive",
+    "#junetech_geo:mafic_extrusive",
+    "#junetech_geo:ultramafic_intrusive",
+    "#junetech_geo:ultramafic_extrusive"
   ]
 }
