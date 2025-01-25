@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.junedev.junetech_geo.block.ModBlocks;
 import net.junedev.junetech_geo.item.ModCreativeModeTabs;
 import net.junedev.junetech_geo.item.ModItems;
+import net.junedev.junetech_geo.worldgen.chunk.JtGeOChunkStatus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +35,7 @@ public class JunetechGeo {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        JtGeOChunkStatus.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
