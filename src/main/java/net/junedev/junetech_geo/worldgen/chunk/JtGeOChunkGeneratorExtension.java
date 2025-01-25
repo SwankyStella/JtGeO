@@ -15,7 +15,7 @@ public interface JtGeOChunkGeneratorExtension {
 
     // TODO: all of these parameters, need to figure out what ones are necessary for this
     default CompletableFuture<ChunkAccess> generateStrata(ChunkAccess chunk) {
-        JunetechGeo.LOGGER.info("Generating in chunk {}", chunk.getPos());
+        JunetechGeo.LOGGER.info("Generating strata in chunk {}", chunk.getPos());
         // Simulate some loading time
         return CompletableFuture.supplyAsync(() -> chunk, CompletableFuture.delayedExecutor(2, TimeUnit.SECONDS));
     }
