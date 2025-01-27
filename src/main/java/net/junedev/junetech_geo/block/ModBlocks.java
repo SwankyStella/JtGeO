@@ -507,13 +507,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> GYPSUM = registerBlock("gypsum",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), CASO4, true));
-    public static final RegistryObject<Block> GYPSUM_VARIANT_DARK = registerBlock("gypsum_variant_dark",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> GYPSUM_VARIANT_LIGHT = registerBlock("gypsum_variant_light",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> GYPSUM_VARIANT_DOLOMITIC = registerBlock("gypsum_variant_dolomitic",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
-    public static final RegistryObject<Block> GYPSUM_BRICKS = registerBlock("gypsum_bricks",
+   public static final RegistryObject<Block> GYPSUM_BRICKS = registerBlock("gypsum_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> GYPSUM_BRICKS_SMALL = registerBlock("gypsum_bricks_small",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));

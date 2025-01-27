@@ -7,6 +7,6 @@
     "particle": "junetech_geo:block/stromatolite_top",
     "south": "junetech_geo:block/stromatolite_side",
     "up": "junetech_geo:block/stromatolite_top",
-    "west": "junetech_geo:block/stromatolide_side"
+    "west": "junetech_geo:block/stromatolite_side"
   }
 }
