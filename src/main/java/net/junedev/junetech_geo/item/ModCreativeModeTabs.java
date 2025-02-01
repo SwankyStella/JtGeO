@@ -325,7 +325,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.METACONGLOMERATE.get());
                         pOutput.accept(ModBlocks.METACONGLOMERATE_POLYMICT.get());
                         pOutput.accept(ModBlocks.METAPELITE.get());
-                        pOutput.accept(ModBlocks.METANOVACULITE.get());
                         pOutput.accept(ModBlocks.PHYLLITE.get());
                         pOutput.accept(ModBlocks.PHYLLITE_DUKE_STONE.get());
                         pOutput.accept(ModBlocks.PHYLLITE_SERICITE.get());
@@ -344,6 +343,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.MYLONITE.get());
                         pOutput.accept(ModBlocks.JASPEROID_AMETHYST.get());
                         pOutput.accept(ModBlocks.JASPEROID_CITRINE.get());
+                        pOutput.accept(ModBlocks.METANOVACULITE.get());
                     })
                     .build());
     public static final RegistryObject<CreativeModeTab> MINERALS = CREATIVE_MODE_TABS.register("minerals",
