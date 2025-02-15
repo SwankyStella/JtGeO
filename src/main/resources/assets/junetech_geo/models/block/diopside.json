@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "junetech_geo:block/diopside_top",
+    "side": "junetech_geo:block/diopside_side"
+  }
+}

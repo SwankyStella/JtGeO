@@ -2609,7 +2609,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> DIOPSIDE_CHROMIUM = registerBlock("diopside_chromium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
-    public static final RegistryObject<Block> DOLOMITE_CRYSTAL = registerBlock("dolomite_crystal",
+    public static final RegistryObject<Block> DOLOMITE_CRYSTAL_BLOCK = registerBlock("dolomite_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DORRITE = registerBlock("dorrite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
@@ -2788,7 +2788,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> JASPER_GEODE_BLOCK = registerBlock("jasper_geode_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> JASPILLITE_GEODE_BLOCK = registerBlock("jaspillite_geode_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> JERVISITE = registerBlock("jervisite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> JOHANNSENITE = registerBlock("johannsenite",

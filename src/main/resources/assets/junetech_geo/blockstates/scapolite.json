@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "junetech_geo:block/scapolite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "junetech_geo:block/scapolite"
+    },
+    "axis=z": {
+      "model": "junetech_geo:block/scapolite",
+      "x": 90
+    }
+  }
+}

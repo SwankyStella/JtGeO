@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "junetech_geo:block/aphthitalite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "junetech_geo:block/aphthitalite"
+    },
+    "axis=z": {
+      "model": "junetech_geo:block/aphthitalite",
+      "x": 90
+    }
+  }
+}

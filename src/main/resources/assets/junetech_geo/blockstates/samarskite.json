@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "junetech_geo:block/samarskite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "junetech_geo:block/samarskite"
+    },
+    "axis=z": {
+      "model": "junetech_geo:block/samarskite",
+      "x": 90
+    }
+  }
+}

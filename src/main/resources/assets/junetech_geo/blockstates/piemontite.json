@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "junetech_geo:block/piemontite",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "junetech_geo:block/piemontite"
+    },
+    "axis=z": {
+      "model": "junetech_geo:block/piemontite",
+      "x": 90
+    }
+  }
+}
