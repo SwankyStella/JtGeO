@@ -62,7 +62,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ANTHRACITE_RESINITE = registerBlock("anthracite_resinite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ARAGONITE_CRYSTAL = registerBlock("aragonite_crystal",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ARGILLITE = registerBlock("argillite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ARGILLITE_COBBLESTONE = registerBlock("argillite_cobblestone",
@@ -1618,13 +1618,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMOKY_POLISHED = registerBlock("smoky_polished",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRANITE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OBSIDIAN_GLASS = registerBlock("obsidian_glass",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).sound(SoundType.GLASS)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> OBSIDIAN_GLASS_PANE = registerBlock("obsidian_glass_pane",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> URANIUM_GLASS = registerBlock("uranium_glass",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.GLASS)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> URANIUM_GLASS_PANE = registerBlock("uranium_glass_pane",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     // sediment + \\ YOU ARE HERE in block models
     public static final RegistryObject<Block> LOAM_DENSE = registerBlock("loam_dense",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
@@ -2318,9 +2318,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ADULARIA = registerBlock("adularia",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> AEGIRINE = registerBlock("aegirine",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> AENIGMATITE = registerBlock("aenigmatite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> AFGHANITE = registerBlock("afghanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> AGATE_GEODE_BLOCK = registerBlock("agate_geode_block",
@@ -2333,12 +2333,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ALBITE = registerBlock("albite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> ALEXANDRITE = registerBlock("alexandrit",
+    public static final RegistryObject<Block> ALEXANDRITE = registerBlock("alexandrite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ALFORSITE = registerBlock("alforsite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ALITE = registerBlock("alite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ALLANITE = registerBlock("allanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ALLOCLASITE = registerBlock("alloclasite",
@@ -2352,11 +2352,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALUNITE = registerBlock("alunite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> AMAZONITE = registerBlock("amazonite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> AMBLYGONITE = registerBlock("amblygonite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> AMESITE = registerBlock("amesite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ANALCIME = registerBlock("analcime",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ANATASE = registerBlock("anatase",
@@ -2370,7 +2370,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ANGLESITE = registerBlock("anglesite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ANHYDRITE_HYDROTHERMAL = registerBlock("anhydrite_hydrothermal",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ANKERITE = registerBlock("ankerite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ANNITE = registerBlock("annite",
@@ -2384,15 +2384,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> ANTONOZITE = registerBlock("antonozite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> APATITE = registerBlock("apatite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> APHROSIDERITE = registerBlock("aphrosiderite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> APHTHITALITE = registerBlock("aphthitalite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> APOPHYLLITE = registerBlock("apophyllite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> AQUAMARINE = registerBlock("aquamarine",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ARFVEDSONITE = registerBlock("arfvedsonite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ARGYRODITE = registerBlock("argyrodite",
@@ -2416,7 +2416,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> AZURITE = registerBlock("azurite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BABINGTONITE = registerBlock("babingtonite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BAILEYCHLORE = registerBlock("baileychlore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BANALSITE = registerBlock("banalsite",
@@ -2426,7 +2426,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BARYTE = registerBlock("baryte",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BASTNASITE = registerBlock("bastnasite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BAURANOITE = registerBlock("bauranoite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BEIDELLITE_CLAY = registerBlock("beidellite_clay",
@@ -2436,13 +2436,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> BENTONITE_CLAY = registerBlock("bentonite_clay",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BERYL_RED = registerBlock("beryl_red",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BERYL = registerBlock("beryl",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BERYLLIUM_RAW = registerBlock("beryllium_raw",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BERZEILITE = registerBlock("berzeilite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BETAFITE = registerBlock("betafite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BISCHOFITE = registerBlock("bischofite",
@@ -2456,13 +2456,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> BOEHMITE = registerBlock("boehmite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BORACITE = registerBlock("boracite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BORNITE = registerBlock("bornite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BOROMUSCOVITE = registerBlock("boromuscovite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BRAZILIANITE = registerBlock("brazilianite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> BRIDGMANITE = registerBlock("bridgmanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> BROCHANTITE = registerBlock("brochantite",
@@ -2482,9 +2482,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BYTOWNITE = registerBlock("bytownite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CADMIUM_RAW = registerBlock("cadmium_raw",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CALAVERITE = registerBlock("calaverite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CALCIOFERRITE = registerBlock("calcioferrite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CALDERITE = registerBlock("calderite",
@@ -2512,7 +2512,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CELESTINE = registerBlock("celestine",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CELSIAN = registerBlock("celsian",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CERUSSITE = registerBlock("cerussite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CHABAZITE = registerBlock("chabazite",
@@ -2530,13 +2530,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHIBAITE = registerBlock("chibaite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CHLORAPATITE = registerBlock("chlorapatite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CHLORARGYRITE = registerBlock("chlorargyrite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CHLORITE = registerBlock("chlorite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CHLORITOID = registerBlock("chloritoid",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CHLOROMELANITE = registerBlock("chloromelanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CHONDRODITE = registerBlock("chondrodite",
@@ -2544,7 +2544,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHROMITE = registerBlock("chromite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CHRYSOBERYL = registerBlock("chrysoberyl",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CHRYSOPRASE_GEODE_BLOCK = registerBlock("chrysoprase_geode_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CHRYSOTILE = registerBlock("chrysotile",
@@ -2553,7 +2553,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CINNABAR = registerBlock("cinnabar",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> CLINOCHLORE = registerBlock("chlinochlore",
+    public static final RegistryObject<Block> CLINOCHLORE = registerBlock("clinochlore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CLINOCLASE = registerBlock("clinoclase",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
@@ -2578,7 +2578,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> COOKEITE = registerBlock("cookeite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CORDIERITE = registerBlock("cordierite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> CORUNDUM_PURE = registerBlock("corundum_pure",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CRISTOBALITE = registerBlock("cristobalite",
@@ -2596,19 +2596,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> DACHIARDITE = registerBlock("dachiardite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DATOLITE = registerBlock("datolite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> DEMANTOID = registerBlock("demantoid",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DESCLOIZITE = registerBlock("descloizite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DIASPORE = registerBlock("diaspore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> DICKITE = registerBlock("dickite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DIOPSIDE = registerBlock("diopside",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> DIOPSIDE_CHROMIUM = registerBlock("diopside_chromium",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> DOLOMITE_CRYSTAL_BLOCK = registerBlock("dolomite_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DORRITE = registerBlock("dorrite",
@@ -2616,35 +2616,35 @@ public class ModBlocks {
     public static final RegistryObject<Block> DRESSERITE = registerBlock("dresserite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DUGGANITE = registerBlock("dugganite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> EASTONITE = registerBlock("eastonite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ECKERMANNITE = registerBlock("eckermannite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> EDENITE = registerBlock("edenite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ELECTRUM_RAW = registerBlock("electrum_raw",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> EMERALD_RAW = registerBlock("emerald_raw",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> EMERALD_TRAPICHE_BLOCK = registerBlock("emerald_trapiche_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ENARGITE = registerBlock("enargite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ENSTATITE = registerBlock("enstatite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> EPHESITE = registerBlock("ephesite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> EPIDOTE = registerBlock("epidote",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> EPISTILBITE = registerBlock("epistilbite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> EPSOMITE = registerBlock("epsomite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ERYTHITE = registerBlock("erythite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ESKOLAITE = registerBlock("eskolaite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> EUDIALYTE = registerBlock("eudialyte",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> EUXENITE = registerBlock("euxenite",
@@ -2653,7 +2653,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> FELDSPAR_MIXED = registerBlock("feldspar_mixed",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> FERBERITE = registerBlock("ferberit",
+    public static final RegistryObject<Block> FERBERITE = registerBlock("ferberite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> FERRIHYDRITE = registerBlock("ferrihydrite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
@@ -2664,7 +2664,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> FLUCKITE = registerBlock("fluckite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> FLUORAPATITE = registerBlock("fluorapatite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> FLUORITE_GREEN = registerBlock("fluorite_green",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> FLUORITE_PURPLE = registerBlock("fluorite_purple",
@@ -2688,7 +2688,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> GEHLENITE = registerBlock("gehlenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> GEIKIELITE = registerBlock("geikielite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> GERMANITE = registerBlock("germanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> GIBBSITE = registerBlock("gibbsite",
@@ -2700,7 +2700,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> GLAUCOPHANE = registerBlock("glaucophane",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> GMELINITE = registerBlock("gmelinite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> GOLDMANITE = registerBlock("goldmanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> GRAPHITE = registerBlock("graphite",
@@ -2708,7 +2708,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> GREENALITE_GEODE_BLOCK = registerBlock("greenalite_geode_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> GREENOCKITE = registerBlock("greenockite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> GROSSULAR = registerBlock("grossular",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> GRUNERITE = registerBlock("grunerite",
@@ -2724,15 +2724,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> HARMOTOME = registerBlock("harmotome",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HASTINGSITE = registerBlock("hastingsite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> HAUYNE = registerBlock("hauyne",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HEAZLEWOODITE = registerBlock("heazlewoodite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HEDENBERGITE = registerBlock("hedenbergite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> HELIODOR = registerBlock("heliodor",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> HENRITERMIERITE = registerBlock("henritermierite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HERBERTSMITHITE = registerBlock("herbertsmithite",
@@ -2744,13 +2744,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> HEYLANDITE = registerBlock("heylandite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HIORTDAHLITE = registerBlock("hiortdahlite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> HOGBOMITE = registerBlock("hogbomite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HOLLANDITE = registerBlock("hollandite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HOLMQUISTITE = registerBlock("holmquistite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> HOWLITE = registerBlock("howlite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HUBNITE = registerBlock("hubnite",
@@ -2764,7 +2764,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> HYDRONEPHELITE = registerBlock("hydronephelite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> HYDROXYAPATITE = registerBlock("hydroxyapatite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> IDRIALITE = registerBlock("idrialite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ILLITE = registerBlock("illite",
@@ -2772,7 +2772,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ILMENITE = registerBlock("ilmenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ILVAITE = registerBlock("ilvaite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> IMOGOLITE_CLAY = registerBlock("imogolite_clay",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> IRIDIUM_RAW = registerBlock("iridium_raw",
@@ -2798,11 +2798,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUNITOITE = registerBlock("junitoite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> KAERSUTITE = registerBlock("kaersutite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> KAINITE = registerBlock("kainite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> KALSILITE = registerBlock("kalsilite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> KAMACITE = registerBlock("kamacite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> KAMIOKITE = registerBlock("kamiokite",
@@ -2824,13 +2824,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> KUTNOHORITE = registerBlock("kutnohorite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> KYANITE = registerBlock("kyanite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> LABRADORITE = registerBlock("labradorite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LAMPROPHYLLITE = registerBlock("lamprophyllite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LARNITE = registerBlock("larnite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> LAUEITE = registerBlock("laueite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LAUMONTITE = registerBlock("laumontite",
@@ -2838,7 +2838,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> LAURANIITE = registerBlock("lauraniite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LAURITE = registerBlock("laurite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> LAVENITE = registerBlock("lavenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LAWSONITE = registerBlock("lawsonite",
@@ -2853,7 +2853,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LEPIDOLITE = registerBlock("lepidolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> LEUCITE = registerBlock("leucte",
+    public static final RegistryObject<Block> LEUCITE = registerBlock("leucite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> LEUCOXENE = registerBlock("leucoxene",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
@@ -2902,9 +2902,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MARGARITE = registerBlock("margarite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MARIALITE = registerBlock("marialite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> MEIONITE = registerBlock("meionite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> MELANOPHLOGITE = registerBlock("melanophlogite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MELILITE = registerBlock("melilite",
@@ -2918,7 +2918,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> METEORIC_IRON = registerBlock("meteoric_iron",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MIMETITE = registerBlock("mimetite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> MINIUM = registerBlock("minium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MIRABILITE = registerBlock("mirabilite",
@@ -2928,19 +2928,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOHAWKITE = registerBlock("mohawkite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MOISSANITE = registerBlock("moissanite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> MOLYBDENITE = registerBlock("molybdenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MONAZITE = registerBlock("monazite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MONTICELLITE = registerBlock("monticellite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> MONTMORILLIONITE_CLAY = registerBlock("montmorillionite_clay",
+    public static final RegistryObject<Block> MONTMORILLONITE_CLAY = registerBlock("montmorillonite_clay",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MOONSTONE = registerBlock("moonstone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MORGANITE = registerBlock("morganite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> MUSCOVITE = registerBlock("muscovite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> MUSGRAVITE = registerBlock("musgravite",
@@ -2950,11 +2950,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> NATROLITE = registerBlock("natrolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> NEPHELINE = registerBlock("nepheline",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> NICKEL_RAW = registerBlock("nickel_raw",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> NIERITE = registerBlock("nierite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> NITRE_GEODE_BLOCK = registerBlock("nitre_geode_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> NOLANITE = registerBlock("nolanite",
@@ -2964,6 +2964,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> NOSEAN = registerBlock("nosean",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OKENITE = registerBlock("okenite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> OLENITE = registerBlock("olenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OLIVENITE = registerBlock("olivenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
@@ -2978,13 +2980,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORPIMENT = registerBlock("orpiment",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OSMIRIDIUM = registerBlock("osmiridium",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
-    public static final RegistryObject<Block> OSUMILLITE = registerBlock("osumillite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+    public static final RegistryObject<Block> OSUMILITE = registerBlock("osumilite",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> OTAVITE = registerBlock("otavite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> OXYHORNBLENDE = registerBlock("oxyhornblende",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> PADPARADSCHA = registerBlock("padparadscha",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> PALENZONAITE = registerBlock("palenzonaite",
@@ -2996,7 +2998,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PARAGONITE = registerBlock("paragonite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> PARGASITE = registerBlock("pargasite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> PATRONITE = registerBlock("patronite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> PECORAITE = registerBlock("pecoraite",
@@ -3026,7 +3028,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PICROMERITE = registerBlock("picromerite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> PIEMONTITE = registerBlock("piemontite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> PIGEONITE = registerBlock("pigeonite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> PLATINIRIDIUM = registerBlock("platiniridium",
@@ -3038,7 +3040,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PLUMBOGUMMITE = registerBlock("plumbogummite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> POLYBASITE = registerBlock("polybasite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> POLYHALITE = registerBlock("polyhalite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> PORTLANDITE = registerBlock("portlandite",
@@ -3092,13 +3094,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> RANKINITE = registerBlock("rankinite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> REALGAR = registerBlock("realgar",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> RHODOCHROSITE = registerBlock("rhodochrosite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RHODONITE = registerBlock("rhodonite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RHONITE = registerBlock("rhonite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> RICHTERITE = registerBlock("richterite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RIEBECKITE = registerBlock("riebeckite",
@@ -3106,7 +3108,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> RINGWOODITE = registerBlock("ringwoodite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RINMANITE = registerBlock("rinmanite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> RIPIDOLITE = registerBlock("ripidolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ROCK_CRYSTAL = registerBlock("rock_crystal",
@@ -3116,13 +3118,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> ROSENBUSCHITE = registerBlock("rosenbuschite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RUBELLITE = registerBlock("rubellite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> RUBICLINE = registerBlock("rubicline",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RUBY = registerBlock("ruby",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> RUTHENIRIDOSMINE = registerBlock("rutheniridosmine",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> RUTILE = registerBlock("rutile",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SALAMMONIAC = registerBlock("salammoniac",
@@ -3130,7 +3132,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SALITE = registerBlock("salite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SAMARSKITE = registerBlock("samarskite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SAPONITE_CLAY = registerBlock("saponite_clay",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SAPPHIRE = registerBlock("sapphire",
@@ -3138,9 +3140,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_GREEN = registerBlock("sapphire_green",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SAPPHIRINE = registerBlock("sapphirine",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SCAPOLITE = registerBlock("scapolite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SCHEELITE = registerBlock("scheelite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SCOLECITE = registerBlock("scolecite",
@@ -3150,7 +3152,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SEIDOZERITE = registerBlock("seidozerite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SEIFERTITE = registerBlock("seifertite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SERENDIBITE = registerBlock("serendibite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SILICOCARNOTITE = registerBlock("silicocarnotite",
@@ -3170,7 +3172,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPESSARTINE = registerBlock("spessartine",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SPHALERITE = registerBlock("sphalerite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SPHEROCOBALTITE = registerBlock("spherocobaltite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SPINEL = registerBlock("spinel",
@@ -3180,15 +3182,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPURRITE = registerBlock("spurrite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> STAUROLITE = registerBlock("staurolite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> STEPHANITE = registerBlock("stephanite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> STIBIOTANTALITE = registerBlock("stibiotantalite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> STIBNITE = registerBlock("stibnite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> STILBITE = registerBlock("stilbite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> STILPNOMELANE = registerBlock("stilpnomelane",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> STISHOVITE = registerBlock("stishovite",
@@ -3198,19 +3200,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> STRONTIANITE = registerBlock("strontianite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> STRUVITE = registerBlock("struvite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SUDOLITE = registerBlock("sudolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SUGILITE = registerBlock("sugilite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SULFUR_RAW = registerBlock("sulfur_raw",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SVABITE = registerBlock("svabite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SYLVANITE = registerBlock("sylvanite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SYNGENITE = registerBlock("syngenite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> SZAIBELYITE = registerBlock("szaibelyite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SZOMOLKONITE = registerBlock("szomolkonite",
@@ -3222,7 +3224,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TANTALITE = registerBlock("tantalite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> TAPIOLITE = registerBlock("tapiolite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> TENNANTITE = registerBlock("tennantite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> TENORITE = registerBlock("tenorite",
@@ -3230,13 +3232,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> TEPHROITE = registerBlock("tephroite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> TETRAHEDRITE = registerBlock("tetrahedrite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> THOMSONITE = registerBlock("thomsonite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> THORIANITE = registerBlock("thorianite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> THORITE = registerBlock("thorite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+    public static final RegistryObject<Block> TITANITE = registerBlock("titanite",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> THORIUM_RAW = registerBlock("thorium_raw",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> THORTVEITITE = registerBlock("thortveitite",
@@ -3254,7 +3258,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOPAZ = registerBlock("topaz",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> TOURMALINE = registerBlock("tourmaline",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> TREMOLITE = registerBlock("tremolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> TRIDYMITE = registerBlock("tridymite",
@@ -3284,7 +3288,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> UVITE = registerBlock("uvite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> VANADINITE = registerBlock("vanadinite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> VANTHOFFITE = registerBlock("vanthoffite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> VARSICITE_GEODE_BLOCK = registerBlock("variscite_geode_block",
@@ -3292,7 +3296,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> VERMICULITE = registerBlock("vermiculite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> VESUVIANITE = registerBlock("vesuvianite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> VIOLARITE = registerBlock("violarite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> VIVIANITE = registerBlock("vivianite",
@@ -3308,9 +3312,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> WILLEMSEITE = registerBlock("willemseite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> WITHERITE = registerBlock("witherite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> WOHLERITE = registerBlock("wohlerite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> WOLFRAMITE = registerBlock("wolframite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> WOLLASTONITE = registerBlock("wollastonite",
@@ -3318,7 +3322,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> WULFENITE = registerBlock("wulfenite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> WURTZITE = registerBlock("wurtzite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> XENOTIME = registerBlock("xenotime",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> XINGZHONGITE = registerBlock("xingzhongite",
@@ -3332,7 +3336,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> YUGAWARALITE = registerBlock("yugawaralite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ZANAZZITE = registerBlock("zanazzite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
     public static final RegistryObject<Block> ZEOLITE = registerBlock("zeolite",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ZINCOCHROMITE = registerBlock("zincochromite",
@@ -3340,7 +3344,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ZIRCON_JACINTH = registerBlock("zircon_jacinth",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> ZOISITE = registerBlock("zoisite",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST))); //MODEL
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
