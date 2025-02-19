@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "junetech_geo:block/pargasite_top",
+    "side": "junetech_geo:block/pargasite_side"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "junetech_geo:block/quartzite"},
+      {"model": "junetech_geo:block/quartzite_variant_streaky"},
+      {"model": "junetech_geo:block/quartzite_variant_streakless"},
+      {"model": "junetech_geo:block/quartzite_variant_grainy"},
+      {"model": "junetech_geo:block/quartzite_variant_pure"}
+    ]
+  }
+}

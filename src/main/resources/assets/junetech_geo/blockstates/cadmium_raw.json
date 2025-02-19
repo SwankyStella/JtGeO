@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "junetech_geo:block/cadmium_raw",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "junetech_geo:block/cadmium_raw"
+    },
+    "axis=z": {
+      "model": "junetech_geo:block/cadmium_raw",
+      "x": 90
+    }
+  }
+}

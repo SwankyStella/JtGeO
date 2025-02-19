@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      {"model": "junetech_geo:block/gypsum"},
+      {"model": "junetech_geo:block/gypsum_variant_dark"}
+    ]
+  }
+}

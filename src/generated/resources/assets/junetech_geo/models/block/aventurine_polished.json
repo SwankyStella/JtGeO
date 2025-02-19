@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "junetech_geo:block/aventurine_polished"
-  }
+  "parent": "minecraft:block/cube_all"
 }

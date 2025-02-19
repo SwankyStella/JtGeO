@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "": [
+      {"model": "junetech_geo:block/dolomite"},
+      {"model": "junetech_geo:block/dolomite_variant_diffused"},
+      {"model": "junetech_geo:block/dolomite_variant_limestone"},
+      {"model": "junetech_geo:block/dolomite_dololutite"},
+      {"model": "junetech_geo:block/dolomit_variant_burrows"}
+    ]
+  }
+}

@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "junetech_geo:block/aragonite_crystal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "junetech_geo:block/aragonite_crystal"
+    },
+    "axis=z": {
+      "model": "junetech_geo:block/aragonite_crystal",
+      "x": 90
     }
   }
 }

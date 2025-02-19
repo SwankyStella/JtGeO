@@ -167,6 +167,51 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.GRANODIORITE.get(),
                         ModBlocks.MONZOGRANITE.get());
 
+        this.tag(ModTags.Blocks.META_FOLIATED)
+                .add(ModBlocks.GNEISS.get(),
+                    ModBlocks.PHYLLITE.get());
+
+
+        this.tag(ModTags.Blocks.META_NONFOLIATED)
+                .add(ModBlocks.QUARTZITE.get(),
+                    ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.FELSIVE_EXTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.FELSIC_INTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.INTERMEDIATE_EXTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.INTERMEDIATE_INTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.MAFIC_EXTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.MAFIC_INTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.ULTRAMAFIC_EXTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.ULTRAMAFIC_INTRUSIVE)
+                .add(ModBlocks.QUARTZITE.get(),
+                        ModBlocks.MARBLE.get());
+
+        this.tag(ModTags.Blocks.SANDSTONE)
+                .add(ModBlocks.SANDSTONE_TURBIDITE.get(),
+                        ModBlocks.SANDSTONE_GANISTER.get());
+
         this.tag(ModTags.Blocks.sio2)
                 .add(Blocks.QUARTZ_BLOCK,
                         Blocks.AMETHYST_BLOCK,
@@ -192,5 +237,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.OPAL_BLOCK.get(),
                         ModBlocks.OPAL_BLOCK_BOULDER.get(),
                         ModBlocks.OPAL_BLOCK_COMMON.get());
+
+
     }
 }
