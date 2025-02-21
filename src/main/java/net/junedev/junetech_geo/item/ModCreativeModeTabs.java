@@ -741,7 +741,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.OPAL_BLOCK_BOULDER.get());
                         pOutput.accept(ModBlocks.OPAL_BLOCK_COMMON.get());
                         pOutput.accept(ModBlocks.ORPIMENT.get());
-                        pOutput.accept(ModBlocks.ORTHOCLASE_FELDSPAR.get());
+                        pOutput.accept(ModBlocks.ALKALI_FELDSPAR.get());
                         pOutput.accept(ModBlocks.ORTHOPYROXENE.get());
                         pOutput.accept(ModBlocks.OSMIRIDIUM.get());
                         pOutput.accept(ModBlocks.OSUMILITE.get());
@@ -1046,7 +1046,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GRAVEL_PEBBLES.get());
                         pOutput.accept(ModItems.LITHIC_LIME.get());
                         pOutput.accept(ModItems.LITHIC_QUARTZ.get());
-                        pOutput.accept(ModItems.LITHIC_ORTHOCLASE_FELDSPAR.get());
+                        pOutput.accept(ModItems.LITHIC_ALKALI_FELDSPAR.get());
                         pOutput.accept(ModItems.LITHIC_PLAGIOCLASE_FELDSPAR.get());
                         pOutput.accept(ModItems.LOAM_CLUMP.get());
                         pOutput.accept(ModItems.MACUAHUITL.get());
@@ -1070,7 +1070,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAND_PILE_GRANITE.get());
                         pOutput.accept(ModItems.SAND_PILE_GLAUCONITE.get());
                         pOutput.accept(ModItems.SAND_PILE_LACUSTRINE.get());
-                        pOutput.accept(ModItems.SAND_PILE_ORTHOCLASE_FELDSPAR.get());
+                        pOutput.accept(ModItems.SAND_PILE_ALKALI_FELDSPAR.get());
                         pOutput.accept(ModItems.SAND_PILE_PLAGIOCLASE_FELDSPAR.get());
                         pOutput.accept(ModItems.SAND_PILE_SODALITE.get());
                         pOutput.accept(ModItems.SMOKY_QUARTZ_SHARD.get());
@@ -1326,9 +1326,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.OLIVINE_BRICKS.get());
                         pOutput.accept(ModBlocks.OLIVINE_BRICKS_SMALL.get());
                         pOutput.accept(ModBlocks.OLIVINE_POLISHED.get());
-                        pOutput.accept(ModBlocks.ORTHOCLASE_FELDSPAR_BRICKS.get());
-                        pOutput.accept(ModBlocks.ORTHOCLASE_FELDSPAR_BRICKS_SMALL.get());
-                        pOutput.accept(ModBlocks.ORTHOCLASE_FELDSPAR_POLISHED.get());
+                        pOutput.accept(ModBlocks.ALKALI_FELDSPAR_BRICKS.get());
+                        pOutput.accept(ModBlocks.ALKALI_FELDSPAR_BRICKS_SMALL.get());
+                        pOutput.accept(ModBlocks.ALKALI_FELDSPAR_POLISHED.get());
                         pOutput.accept(ModBlocks.PERIDOTITE_BRICKS.get());
                         pOutput.accept(ModBlocks.PERIDOTITE_BRICKS_SMALL.get());
                         pOutput.accept(ModBlocks.PERIDOTITE_POLISHED.get());
@@ -1589,15 +1589,19 @@ public class ModCreativeModeTabs {
                     .title(Component.literal("Periodic Table"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.LITHIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.LITHIUM_RAW.get());
                         pOutput.accept(ModBlocks.BERYLLIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.BERYLLIUM_RAW.get());
                         pOutput.accept(ModBlocks.BORON_BLOCK.get());
                         pOutput.accept(ModBlocks.CARBON_BLOCK.get());
                         pOutput.accept(ModBlocks.SODIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.MAGNESIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.ALUMINUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.ALUMINUM_RAW.get());
                         pOutput.accept(ModBlocks.SILICON_BLOCK.get());
                         pOutput.accept(ModBlocks.PHOSPHORUS_BLOCK.get());
                         pOutput.accept(ModBlocks.SULFUR_BLOCK.get());
+                        pOutput.accept(ModBlocks.SULFUR_RAW.get());
                         pOutput.accept(ModBlocks.POTASSIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.CALCIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.SCANDIUM_BLOCK.get());
@@ -1605,14 +1609,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VANADIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.CHROMIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.MANGANESE_BLOCK.get());
+                        pOutput.accept(ModBlocks.MANGANESE_RAW.get());
                         pOutput.accept(Blocks.IRON_BLOCK);
                         pOutput.accept(ModBlocks.COBALT_BLOCK.get());
                         pOutput.accept(ModBlocks.NICKEL_BLOCK.get());
+                        pOutput.accept(ModBlocks.NICKEL_RAW.get());
                         pOutput.accept(Blocks.COPPER_BLOCK);
                         pOutput.accept(ModBlocks.ZINC_BLOCK.get());
                         pOutput.accept(ModBlocks.GALLIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.GERMANIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.ARSENIC_BLOCK.get());
+                        pOutput.accept(ModBlocks.ARSENIC_RAW.get());
                         pOutput.accept(ModBlocks.SELENIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBIDIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.STRONTIUM_BLOCK.get());
@@ -1623,10 +1630,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RUTHENIUM_BLOCk.get());
                         pOutput.accept(ModBlocks.RHODIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.PALLADIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_RAW.get());
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());
+                        pOutput.accept(ModBlocks.SILVER_RAW.get());
                         pOutput.accept(ModBlocks.CADMIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.CADMIUM_RAW.get());
                         pOutput.accept(ModBlocks.INDIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.TIN_BLOCK.get());
+                        pOutput.accept(ModBlocks.TIN_RAW.get());
                         pOutput.accept(ModBlocks.ANTIMONY_BLOCK.get());
                         pOutput.accept(ModBlocks.TELLURIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.IODINE_BLOCK.get());
@@ -1652,15 +1663,22 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RHENIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.OSMIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.IRIDIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.IRIDIUM_RAW.get());
                         pOutput.accept(ModBlocks.PLATINUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.PLATINUM_RAW.get());
                         pOutput.accept(Blocks.GOLD_BLOCK);
                         pOutput.accept(ModBlocks.MERCURY_BLOCK.get());
                         pOutput.accept(ModBlocks.THALLIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.LEAD_BLOCK.get());
+                        pOutput.accept(ModBlocks.LEAD_RAW.get());
                         pOutput.accept(ModBlocks.BISMUTH_BLOCK.get());
+                        pOutput.accept(ModBlocks.BISMUTH_PURE.get());
+                        pOutput.accept(ModBlocks.BISMUTH_SYNTHETIC.get());
                         pOutput.accept(ModBlocks.THORIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.THORIUM_RAW.get());
                         pOutput.accept(ModBlocks.PROTACTINIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.URANIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.URANIUM_RAW.get());
                         pOutput.accept(ModBlocks.NEPTUNIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.PLUTONIUM_BLOCK.get());
                     })

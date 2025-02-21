@@ -835,13 +835,13 @@ public class ModBlocks {
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "SiO₂", true));
     public static final RegistryObject<Block> ONYX_TILES = registerBlock("onyx_tiles",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "SiO₂", true));
-    public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR = registerBlock("orthoclase_feldspar",
+    public static final RegistryObject<Block> ALKALI_FELDSPAR = registerBlock("alkali_feldspar",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
-    public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR_BRICKS = registerBlock("orthoclase_feldspar_bricks",
+    public static final RegistryObject<Block> ALKALI_FELDSPAR_BRICKS = registerBlock("alkali_feldspar_bricks",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
-    public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR_BRICKS_SMALL = registerBlock("orthoclase_feldspar_bricks_small",
+    public static final RegistryObject<Block> ALKALI_FELDSPAR_BRICKS_SMALL = registerBlock("alkali_feldspar_bricks_small",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
-    public static final RegistryObject<Block> ORTHOCLASE_FELDSPAR_POLISHED = registerBlock("orthoclase_feldspar_polished",
+    public static final RegistryObject<Block> ALKALI_FELDSPAR_POLISHED = registerBlock("alkali_feldspar_polished",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "K(AlSi₃O₈)", true));
     public static final RegistryObject<Block> PLAGIOCLASE_FELDSPAR = registerBlock("plagioclase_feldspar",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaAlSi₃O₈·CaAl₂Si₂O₈", true));

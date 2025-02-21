@@ -30,7 +30,7 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SAND_PILE_LACUSTRINE = ITEMS.register("sand_pile_lacustrine",
                 () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> SAND_PILE_ORTHOCLASE_FELDSPAR = ITEMS.register("sand_pile_orthoclase_feldspar",
+        public static final RegistryObject<Item> SAND_PILE_ALKALI_FELDSPAR = ITEMS.register("sand_pile_alkali_feldspar",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SAND_PILE_PLAGIOCLASE_FELDSPAR = ITEMS.register("sand_pile_plagioclase_feldspar",
                 () -> new Item(new Item.Properties()));
@@ -69,7 +69,7 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIC_LIME = ITEMS.register("lithic_lime",
                 () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> LITHIC_ORTHOCLASE_FELDSPAR = ITEMS.register("lithic_orthoclase_feldspar",
+        public static final RegistryObject<Item> LITHIC_ALKALI_FELDSPAR = ITEMS.register("lithic_alkali_feldspar",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIC_PLAGIOCLASE_FELDSPAR = ITEMS.register("lithic_plagioclase_feldspar",
                 () -> new Item(new Item.Properties()));
@@ -927,7 +927,7 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ORPIMENT_SHARDS = ITEMS.register("orpiment_shards",
                 () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> ORTHOCLASE_CHUNK = ITEMS.register("orthoclase_chunk",
+        public static final RegistryObject<Item> ALKALI_FELDSPAR_CHUNK = ITEMS.register("alkali_feldspar_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ORTHOPYROXENE_CRYSTAL = ITEMS.register("orthopyroxene_crystal",
                 () -> new Item(new Item.Properties()));
