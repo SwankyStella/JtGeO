@@ -1,8 +1,8 @@
-/*package net.junedev.junetech_geo.worldgen.features;
+package net.junedev.junetech_geo.worldgen.features;
 //
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by FernFlower decompiler)
-//
+/*
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import java.util.List;

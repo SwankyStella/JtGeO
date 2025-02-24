@@ -1,0 +1,53 @@
+{
+  "": [
+    {
+      "": "minecraft:calcite",
+      "weight": 95
+    },
+    {
+      "": "junetech_geo:aragonite_crystal_block",
+      "weight": 5
+    },
+    {
+      "": "junetech_geo:siderite",
+      "weight": 3
+    },
+    {
+      "": "junetech_geo:rhodochrosite",
+      "weight": 3
+    },
+    {
+      "": "junetech_geo:magnesite",
+      "weight": 2
+    },
+    {
+      "": "junetech_geo:cerussite",
+      "weight": 2
+    },
+    {
+      "": "junetech_geo:gaspeite",
+      "weight": 1
+    },
+    {
+      "": "junetech_geo:spherocobaltite",
+      "weight": 1
+    },
+    {
+      "": "junetech_geo:smithsonite",
+      "weight": 1
+    },
+    {
+      "": "junetech_geo:otavite",
+      "weight": 0.5
+    },
+    {
+      "": "junetech_geo:strontianite",
+      "weight": 0.5
+    },
+    {
+      "": "junetech_geo:witherite",
+      "weight": 0.5
+    }
+  ]
+}
+

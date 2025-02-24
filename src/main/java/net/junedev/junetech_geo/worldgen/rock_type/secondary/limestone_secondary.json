@@ -1,0 +1,24 @@
+{
+  "": [
+    {
+      "": "junetech_geo:limestone_fossiliferous",
+      "weight": 30
+    },
+    {
+      "": "junetech_geo:dolomite",
+      "weight": 30
+    },
+    {
+      "": "junetech_geo:shale",
+      "weight": 10
+    },
+    {
+      "": "junetech_geo:sandstone_feldspathic_arenite",
+      "weight": 5
+    },
+    {
+      "": "junetech_geo:chert",
+      "weight": 4
+    }
+  ]
+}

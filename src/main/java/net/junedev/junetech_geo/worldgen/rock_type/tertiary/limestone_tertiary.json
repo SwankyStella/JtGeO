@@ -1,0 +1,25 @@
+{
+  "": [
+    {
+      "": "junetech_geo:shale",
+      "weight": 30
+    },
+    {
+      "": "junetech_geo:limestone_oolitic",
+      "weight": 30
+    },
+    {
+      "": "junetech_geo:limestone_black",
+      "weight": 10
+    },
+    {
+      "": "junetech_geo:marble",
+      "weight": 5
+    },
+    {
+      "": "junetech_geo:gypsum",
+      "weight": 4
+    }
+  ]
+}
+
