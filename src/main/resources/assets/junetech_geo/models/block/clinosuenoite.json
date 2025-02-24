@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "junetech_geo:block/clinosuenoite_top",
+    "side": "junetech_geo:block/clinosuenoite_side"
+  }
+}

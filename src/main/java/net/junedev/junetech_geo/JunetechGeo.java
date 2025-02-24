@@ -50,7 +50,7 @@ public class JunetechGeo {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.MACUAHUITL);
         }
-        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.BUCKET_OF_CRUDE_OIL);
             event.accept(ModItems.BUCKET_OF_LAHAR);
             event.accept(ModItems.BUCKET_OF_MERCURY);

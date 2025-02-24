@@ -185,6 +185,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
 
         //Minerals
+        public static final RegistryObject<Item> ABELLAITE_FIBERS = ITEMS.register("abellaite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ACANTHITE_CRYSTALS = ITEMS.register("acanthite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ACTINOLITE_FIBERS = ITEMS.register("actinolite_fibers",
@@ -200,6 +202,8 @@ public class ModItems {
         public static final RegistryObject<Item> AENIGMATITE_CRYSTAL = ITEMS.register("aenigmatite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AFGHANITE_SHARD = ITEMS.register("afghanite_shard",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> AGARDITE_FIBERS = ITEMS.register("agardite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AGATE_NODULE = ITEMS.register("agate_nodule",
                 () -> new Item(new Item.Properties()));
@@ -226,6 +230,8 @@ public class ModItems {
         public static final RegistryObject<Item> ALLUAUDITE_CRYSTALS = ITEMS.register("alluaudite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ALMANDINE_CRYSTAL = ITEMS.register("almandine_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ALUM_CRYSTAL = ITEMS.register("alum_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ALUMINUM_NATIVE = ITEMS.register("aluminum_native",
                 () -> new Item(new Item.Properties()));
@@ -271,13 +277,19 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ANTIGORITE_FIBERS = ITEMS.register("antigorite_fibers",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ANTLERITE_CRYSTAL = ITEMS.register("antlerite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> APATITE_CRYSTAL = ITEMS.register("apatite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> APATITE_COLLOPHANE_CHUNK = ITEMS.register("apatita_collophane_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> APHROSIDERITE_CRYSTAL = ITEMS.register("aphrosiderite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> APHTHITALITE_CRYSTAL = ITEMS.register("aphthitalite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> APOPHYLLITE_CUBE = ITEMS.register("apophyllite_cube",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> AQUALITE_CHUNK = ITEMS.register("aqualite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AQUAMARINE_CRYSTAL = ITEMS.register("aquamarine_crystal",
                 () -> new Item(new Item.Properties()));
@@ -299,6 +311,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AUGITE_CRYSTALS = ITEMS.register("augite_crystals",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> AURA_QUARTZ_SHARD = ITEMS.register("aura_quartz_shard",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AURICHALCITE_FIBERS = ITEMS.register("aurichalcite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> AUTUNITE_SHEET = ITEMS.register("autunite_sheet",
@@ -317,7 +331,11 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BARKEVILLE_CHUNK = ITEMS.register("barkeville_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BARRINGERITE_CRYSTAL = ITEMS.register("barringerite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BARYTE_SHARDS = ITEMS.register("baryte_shards",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BARYTOCALCITE_ROSETTE = ITEMS.register("barytocalcite_rosette",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BASTNASITE_CRYSTAL = ITEMS.register("bastnasite_crystal",
                 () -> new Item(new Item.Properties()));
@@ -328,6 +346,8 @@ public class ModItems {
         public static final RegistryObject<Item> BENITOITE_CRYSTALS = ITEMS.register("benitoite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BENTONITE_CLAY_CHUNK = ITEMS.register("bentonite_clay_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BERTHIERINE_CUBE = ITEMS.register("betherierine_cube",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BERYL_CRYSTAL = ITEMS.register("beryl_crystal",
                 () -> new Item(new Item.Properties()));
@@ -347,6 +367,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BISMUTHINITE_CRYSTALS = ITEMS.register("bismuthinite_crystals",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BISMUTITE_SHARDS = ITEMS.register("bismutite_shards",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BIXBYITE_CRYSTAL = ITEMS.register("bixbyite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BOEHMITE_FIBERS = ITEMS.register("boehmite_fibers",
@@ -359,7 +381,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BOROMUSCOVITE_SHARD = ITEMS.register("boromuscovite_shard",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BOUSSINGAULTITE_SHARDS = ITEMS.register("boussingaultite_shards",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BRACKEBUSCHITE_CRYSTALS = ITEMS.register("brackebuschite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BRAZILIANITE_CRYSTAL = ITEMS.register("brazilianite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BRIANYOUNGITE_FIBERS = ITEMS.register("brianyoungite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BRIDGMANITE_CUBE = ITEMS.register("bridgmanite_cube",
                 () -> new Item(new Item.Properties()));
@@ -377,6 +405,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BUDDINGTONITE_CHUNK = ITEMS.register("buddingtonite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> BURBANKITE_CRYSTAL = ITEMS.register("burbankite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BUSTAMITE_CHUNK = ITEMS.register("bustamite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> BYTOWNITE_CHUNK = ITEMS.register("bytownite_chunk",
@@ -386,6 +416,8 @@ public class ModItems {
         public static final RegistryObject<Item> CALAVERITE_CRYSTALS = ITEMS.register("calaveriite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CALCIOFERRITE_FIBERS = ITEMS.register("calcioferrite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CALCITE_BLUE_CRYSTAL = ITEMS.register("calcite_blue_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CALCITE_SHARD = ITEMS.register("calcite_shard",
                 () -> new Item(new Item.Properties()));
@@ -431,6 +463,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHAROITE_FIBERS = ITEMS.register("charoite_fibers",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CHENITE_SHARDS = ITEMS.register("chenite_shards",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHIBAITE_CLUMP = ITEMS.register("chibaite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHLORAPATITE_CRYSTAL = ITEMS.register("chlorapatite_crystal",
@@ -447,6 +481,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHONDRODITE_CRYSTAL = ITEMS.register("chondrodite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CHROMFERRIDE_NANOCRYSTAL = ITEMS.register("cromferide_nanocrystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHROMITE_CRYSTAL = ITEMS.register("chromite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHRYSOBERYL_CRYSTAL = ITEMS.register("chrysoberyl_crystal",
@@ -461,7 +497,11 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CHUDOBAITE_FIBERS = ITEMS.register("chudobaite_fibers",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CHURCHITE_FIBERS = ITEMS.register("churchite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CINNABAR_SHARDS = ITEMS.register("cinnabar_shards",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CLARKEITE_NODULE = ITEMS.register("clarkeite_nodule",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CLINOCHLORE_CRYSTAL = ITEMS.register("clinochlore_crystal",
                 () -> new Item(new Item.Properties()));
@@ -473,6 +513,10 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CLINOPYROXENE_CRYSTAL = ITEMS.register("clinopyroxene_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CLINOSUENOITE_CRYSTAL = ITEMS.register("clinosuenoite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CLINOTHULITE_CHUNK = ITEMS.register("clinothulite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CLINOZOISITE_CRYSTALS = ITEMS.register("clinozoisite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CLINTONITE_SHEET = ITEMS.register("clintonite_sheet",
@@ -483,21 +527,41 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COESITE_CHUNK = ITEMS.register("coesite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> COHENITE_CHUNK = ITEMS.register("cohenite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COLEMANITE_CRYSTALS = ITEMS.register("colemanite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COLUMBITE_CHUNK = ITEMS.register("columbite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CONICHALCITE_CRYSTALS = ITEMS.register("conichalcite_crystals",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CONNELLITE_FIBERS = ITEMS.register("connellite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COOKEITE_CLUMP = ITEMS.register("cookeite_clump",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> COOPERITE_CRYSTAL = ITEMS.register("cooperite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> COPIAPITE_CLUMP = ITEMS.register("copiapite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> COPPER_TELLURIC = ITEMS.register("copper_telluric",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CORDIERITE_CRYSTAL = ITEMS.register("cordierite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CORKITE_CRYSTAL = ITEMS.register("corkite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CORNWALLITE_CLUMP = ITEMS.register("cornwallite_clump",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CORONADITE_CLUMP = ITEMS.register("coronadite_clump",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CORUNDUM_CRYSTAL = ITEMS.register("corundum_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> COVELLITE_CRYSTAL = ITEMS.register("covellite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CRISTOBALITE_CRYSTAL = ITEMS.register("cristobalite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CROCIDOLITE_FIBERS = ITEMS.register("crocidolite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CROCOITE_CRYSTALS = ITEMS.register("crocoite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CRONSTEDTITE_CHUNK = ITEMS.register("cronstedtite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -509,13 +573,19 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> CUPRITE_CRYSTAL = ITEMS.register("cuprite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> CUPRITE_CHALCOTRICHITE_CRYSTALS = ITEMS.register("cuprite_chalcotrichite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DACHIARDITE_FIBERS = ITEMS.register("dachiardite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DATOLITE_CRYSTAL = ITEMS.register("datolite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> DAUBREELITE_CRYSTAL = ITEMS.register("daubreelite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DEMANTOID_CRYSTAL = ITEMS.register("demantoid_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DESCLOIZITE_CRYSTAL = ITEMS.register("descloizite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> DEVILLINE_SHARDS = ITEMS.register("devilline_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DIAMOND = ITEMS.register("diamond",
                 () -> new Item(new Item.Properties()));
@@ -529,11 +599,19 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DOLOMITE_CRYSTAL = ITEMS.register("dolomite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> DOLOMITE_IRON_CRYSTAL = ITEMS.register("dolomite_iron_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DORRITE_SHARD = ITEMS.register("dorrite_shard",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> DOYLEITE_CLUMP = ITEMS.register("doyleite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DRAVITE_CRYSTAL = ITEMS.register("dravite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DRESSERITE_FIBERS = ITEMS.register("dresserite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> DUFRENITE_SHARDS = ITEMS.register("dufrenite_shards",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> DUFTITE_CRYSTAL = ITEMS.register("duftite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> DUGGANITE_CRYSTAL = ITEMS.register("dugganite_crystal",
                 () -> new Item(new Item.Properties()));
@@ -546,6 +624,8 @@ public class ModItems {
         public static final RegistryObject<Item> ELBAITE_CRYSTAL = ITEMS.register("elbaite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ELECTRUM_CHUNK = ITEMS.register("electrum_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ELYITE_CRYSTALS = ITEMS.register("elyite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> EMERALD = ITEMS.register("emerald",
                 () -> new Item(new Item.Properties()));
@@ -587,15 +667,23 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FLUCKITE_FIBERS = ITEMS.register("fluckite_fibers",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> FLUOR_DRAVITE_CRYSTAL = ITEMS.register("fluor_dravite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FLUORAPATITE_CRYSTAL = ITEMS.register("fluorapatite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FLUORITE_ANTONOLITE_CHUNK = ITEMS.register("fluorite_antonilite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FLUORITE_CRYSTAL = ITEMS.register("fluorite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> FLUORITE_FALSE_EMERALD_CRYSTAL = ITEMS.register("fluorite_false_emerald_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> FLUORITE_FALSE_TOPAZ_CRYSTAL = ITEMS.register("fluorite_false_topaz_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FLUORITE_GREEN_CRYSTAL = ITEMS.register("fluorite_green_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FORSTERITE_CRYSTAL = ITEMS.register("forsterite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> FOURMARIERITE_CRYSTAL = ITEMS.register("fourmarierite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> FUCHSITE_SHARDS = ITEMS.register("fuchsite_shards",
                 () -> new Item(new Item.Properties()));
@@ -606,6 +694,10 @@ public class ModItems {
         public static final RegistryObject<Item> GALENA_CUBE = ITEMS.register("galena_cube",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GALLITE_CHUNK = ITEMS.register("gallite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GARNET_CRYSTAL = ITEMS.register("garnet_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GARNET_YELLOW_CRYSTAL = ITEMS.register("garnet_yellow_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GARNIERITE_CLUMP = ITEMS.register("garnierite_clump",
                 () -> new Item(new Item.Properties()));
@@ -621,6 +713,16 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GIBBSITE_CLUMP = ITEMS.register("gibbsite_clump",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GLASS_SLAG_CHUNK = ITEMS.register("glass_slag_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GLASS_SLAG_CITRINE_CHUNK = ITEMS.register("glass_slag_citrine_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GLASS_SLAG_ROSE_CHUNK = ITEMS.register("glass_slag_rose_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GLASS_SLAG_BODEACHAT_CHUNK = ITEMS.register("glass_slag_bodeachat_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GLASS_SLAG_FERROLITE_CHUNK = ITEMS.register("glass_slag_ferrolite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GLAUBERITE_SHARDS = ITEMS.register("glauberite_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GLAUCONITE_CHUNK = ITEMS.register("glauconite_chunk",
@@ -629,9 +731,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GMELINITE_CRYSTAL = ITEMS.register("gmelinite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GOBBINSITE_CHUNK = ITEMS.register("gobbinsite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GOLD_TELLURIC = ITEMS.register("gold_telluric",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GOLDMANITE_CRYSTAL = ITEMS.register("goldmanite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GOSLARITE_CHUNK = ITEMS.register("goslarite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GRAPHITE_SHEET = ITEMS.register("graphite_sheet",
                 () -> new Item(new Item.Properties()));
@@ -643,13 +749,19 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GUANGLINITE_SHARDS = ITEMS.register("guanglinite_shards",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GUMMITE_CHUNK = ITEMS.register("gummite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> GYPSUM_FIBERS = ITEMS.register("gypsum_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> GYPSUM_SATIN_SPAR_FIBERS = ITEMS.register("gypsum_satin_spar_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HAFNON_CRYSTAL = ITEMS.register("hafnon_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HALITE_CUBE = ITEMS.register("halite_cube",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HALLOYSITE_CLAY_CHUNK = ITEMS.register("halloysite_clay_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HALOTRICHITE_FIBERS = ITEMS.register("halotrichite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HANCOCKITE_CRYSTALS = ITEMS.register("hancockite_crystals",
                 () -> new Item(new Item.Properties()));
@@ -658,6 +770,8 @@ public class ModItems {
         public static final RegistryObject<Item> HASTINGSITE_CRYSTAL = ITEMS.register("hastingsite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HAUYNE_CRYSTAL = ITEMS.register("hauyne_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HAXONITE_CUBE = ITEMS.register("haxonite_cube",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HEAZLEWOODITE_CHUNK = ITEMS.register("heazlewoodite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -677,6 +791,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HEULANDITE_SHEET = ITEMS.register("heulandite_sheet",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HIBONITE_CRYSTAL = ITEMS.register("hibonite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HIORTDAHLITE_CRYSTAL = ITEMS.register("hiortdahlite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HOGBOMITE_CRYSTAL = ITEMS.register("hogbomite_crystal",
@@ -684,6 +800,8 @@ public class ModItems {
         public static final RegistryObject<Item> HOLLANDITE_CLUMP = ITEMS.register("hollandite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HOLMQUISTITE_CRYSTAL = ITEMS.register("holmquistite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HONESSITE_FIBERS = ITEMS.register("honessite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HORNBLENDE_BASALTIC_CRYSTAL = ITEMS.register("hornblende_basaltic_crystal",
                 () -> new Item(new Item.Properties()));
@@ -697,11 +815,17 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HYALOPHANE_CHUNK = ITEMS.register("hyalophane_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HYDROCERUSSITE_SHARD = ITEMS.register("hydrocerussite_shard",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HYDROGROSSULAR_CRYSTAL = ITEMS.register("hydrogrossular_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HYDROHONESSITE_CLUMP = ITEMS.register("hydrohonessite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HYDRONEPHELITE_CHUNK = ITEMS.register("hydronephelite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> HYDROXYAPATITE_CRYSTAL = ITEMS.register("hydroxyapatite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> HYDROZINCITE_CLUMP = ITEMS.register("hydrozincite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> IDDINGSITE_CHUNK = ITEMS.register("iddingsite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -771,6 +895,10 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LAMPROPHYLLITE_CRYSTALS = ITEMS.register("lamprophyllite_crystals",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> LANARKITE_FIBERS = ITEMS.register("lanarkite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> LANGITE_CRYSTAL = ITEMS.register("langite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LARIMAR_CLUMP = ITEMS.register("larimar_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LARNITE_CRYSTAL = ITEMS.register("larnite_crystal",
@@ -805,6 +933,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LEVYNE_SHEET = ITEMS.register("levyne_sheet",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> LIBETHENITE_CRYSTAL = ITEMS.register("libethenite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LIEBENBERG_SHARD = ITEMS.register("liebenberg_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LILEYITE_CUBE = ITEMS.register("lileyite_cube",
@@ -814,6 +944,8 @@ public class ModItems {
         public static final RegistryObject<Item> LIMONITE_YELLOW_CLUMP = ITEMS.register("limonite_yellow_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LINNAEITE_CRYSTAL = ITEMS.register("linnaeite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> LITHARGE_CRYSTAL = ITEMS.register("litharge_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LITHIUM_NATIVE = ITEMS.register("lithium_native",
                 () -> new Item(new Item.Properties()));
@@ -827,11 +959,17 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> LUZONITE_CHUNK = ITEMS.register("luzonite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MACKINAWITE_CRYSTALS = ITEMS.register("mackinawite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MAGNESITE_CRYSTAL = ITEMS.register("magnesite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MAGNETITE_CRYSTAL = ITEMS.register("magnetite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MAGNETITE_TITANIUM_CRYSTAL = ITEMS.register("magnetite_titanium_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MAGNETITE_VANADIUM_CRYSTAL = ITEMS.register("magnetite_vanadium_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MAGNOMAGNETITE_CRYSTAL = ITEMS.register("magnomagnetite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MAJORITE_FIBERS = ITEMS.register("majorite_fibers",
                 () -> new Item(new Item.Properties()));
@@ -843,27 +981,49 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MARIALITE_CRYSTAL = ITEMS.register("marialite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MASCAGNITE_CRYSTALS = ITEMS.register("mascagnite_crystals",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MASKELYNITE_CHUNK = ITEMS.register("maskelynite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MASSICOT_CHUNK = ITEMS.register("massicot_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MEIONITE_CRYSTAL = ITEMS.register("meionite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MELANOPHLOGITE_CLUMP = ITEMS.register("melanophlogite_clump",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MELANTERITE_CHUNK = ITEMS.register("melanterite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MELILITE_CHUNK = ITEMS.register("melilite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MELIPHANITE_SHARDS = ITEMS.register("meliphanite_shards",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MERRILLITE_NANOCRYSTAL = ITEMS.register("merrillite_nanocrystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MERWINITE_CHUNK = ITEMS.register("merwinite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> META_AUTUNITE_CRYSTAL = ITEMS.register("meta_autunite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> METAPHONOLITE_CHUNK = ITEMS.register("metaphonolite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> METAVANDENDRIESSCHEITE_SHARD = ITEMS.register("metavandendriesscheite_shard",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> METAVOLTINE_SHARDS = ITEMS.register("metavoltine_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MICA_SHEET = ITEMS.register("mica_sheet",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MICROCLINE_SHARD = ITEMS.register("microcline_shard",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MILLERITE_FIBERS = ITEMS.register("millerite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MIMETITE_CRYSTAL = ITEMS.register("mimetite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MINIUM_CHUNK = ITEMS.register("minium_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MINRECORDITE_CLUMP = ITEMS.register("minrecordite_clump",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MIRABILITE_CRYSTALS = ITEMS.register("mirabilite_crystals",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MITRIDALITE_CHUNK = ITEMS.register("mitridalite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MOGANITE_CHUNK = ITEMS.register("moganite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -875,6 +1035,16 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MONAZITE_CRYSTAL = ITEMS.register("monazite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MONAZITE_CERIUM_CRYSTAL = ITEMS.register("monazite_cerium_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MONAZITE_GADOLINIUM_CRYSTAL = ITEMS.register("monazite_gadolinium_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MONAZITE_LANTHANUM_CRYSTAL = ITEMS.register("monazite_lanthanum_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MONAZITE_NEODYMIUM_CRYSTAL = ITEMS.register("monazite_neodymium_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MONAZITE_SAMARIUM_CRYSTAL = ITEMS.register("monazite_samarium_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MONTICELLITE_CRYSTAL = ITEMS.register("monticellite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MONTMORILLONITE_CLAY_CHUNK = ITEMS.register("montmorillonite_clay_chunk",
@@ -883,9 +1053,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MORGANITE_CRYSTAL = ITEMS.register("morganite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> MOTTRAMITE_CLUMP = ITEMS.register("mottramite_clump",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MUSCOVITE_SHEET = ITEMS.register("muscovite_sheet",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> MUSGRAVITE_CLUMP = ITEMS.register("musgravite_clump",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NAKAURIITE_CLUMP = ITEMS.register("nakauriite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NAMANSILLITE_FIBERS = ITEMS.register("namansillite_fibers",
                 () -> new Item(new Item.Properties()));
@@ -895,17 +1069,35 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NICKEL_NATIVE = ITEMS.register("nickel_native",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NICKELINE_SHARD = ITEMS.register("nickeline_shard",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NICKELPHOSPHIDE_NANOCRYSTAL = ITEMS.register("nickelphosphide_nanocrystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NIERITE_NANOCRYSTAL = ITEMS.register("nierite_nanocrystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NITRATINE_CHUNK = ITEMS.register("nitratine_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NITRE_NODULE = ITEMS.register("nitre_nodule",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NITROCALCITE_CRYSTAL = ITEMS.register("nitrocalcite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NOLANITE_CHUNK = ITEMS.register("nolanite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NONTRONITE_CLUMP = ITEMS.register("nontronite_clump",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NORDSTRANITE_CLUMP = ITEMS.register("nordstranite_clump",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> NORSETHITE_CRYSTAL = ITEMS.register("norsethite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> NOSEAN_CRYSTAL = ITEMS.register("nosean_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> OBSIDIAN_SNOWFLAKE_SHARD = ITEMS.register("obsidian_snowflake_shard",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> OKENITE_FIBERS = ITEMS.register("okenite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> OLDHAMITE_NODULE = ITEMS.register("oldhamite_nodule",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> OLEKMINSKITE_SHARDS = ITEMS.register("olekminskite_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> OLENITE_CHUNK = ITEMS.register("olenite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -947,6 +1139,10 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PARAGONITE_FIBERS = ITEMS.register("paragonite_fibers",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PARALSTONITE_SHARDS = ITEMS.register("paralstonite_shards",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PARATACAMITE_SHARDS = ITEMS.register("paratacamite_shards",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PARGASITE_CRYSTAL = ITEMS.register("pargasite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PATRONITE_CHUNK = ITEMS.register("patronite_chunk",
@@ -958,6 +1154,8 @@ public class ModItems {
         public static final RegistryObject<Item> PENNINE_SHEET = ITEMS.register("pennine_sheet",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PENTLANDITE_CRYSTAL = ITEMS.register("pentlandite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PERICLASE_CRYSTAL = ITEMS.register("periclase_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PERIDOT_CHUNK = ITEMS.register("peridot_chunk",
                 () -> new Item(new Item.Properties()));
@@ -985,6 +1183,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PIGEONITE_SHARDS = ITEMS.register("pigeonite_shards",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PISEKITE_CRYSTAL = ITEMS.register("pisekite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PLAGIOCLASE_CHUNK = ITEMS.register("plagioclase_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PLATINIRIDIUM_CRYSTAL = ITEMS.register("platiniridium_crystal",
@@ -995,11 +1195,17 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PLUMBOGUMMITE_CHUNK = ITEMS.register("plumbogummite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PLUMBOJAROSITE_SHARDS = ITEMS.register("plumbojarosite_shards",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> POLYBASITE_CRYSTAL = ITEMS.register("polybasite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> POLYHALITE_CRYSTAL = ITEMS.register("polyhalite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PORTLANDITE_CHUNK = ITEMS.register("portlandite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> POSNJAKITE_CRYSTAL = ITEMS.register("posnjakite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> POTASSIC_MAGNESIO_FLUORO_ARFVEDSONITE_CRYSTAL = ITEMS.register("potassic_magnesio_fluoro_arfvedsonite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> POUDRETTEITE_SHARD = ITEMS.register("poutretteite_shard",
                 () -> new Item(new Item.Properties()));
@@ -1012,6 +1218,8 @@ public class ModItems {
         public static final RegistryObject<Item> PREHNITE_CLUMP = ITEMS.register("prehnite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PSEUDOBROOKITE_CRYSTAL = ITEMS.register("pseudobrookite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> PSEUDOMALACHITE_CRYSTAL = ITEMS.register("pseudomalachite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> PSEUDOWOLLASTONITE_SHARDS = ITEMS.register("pseudowollastonite_shards",
                 () -> new Item(new Item.Properties()));
@@ -1043,6 +1251,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> QUARTZ_HERKIMER_CRYSTAL = ITEMS.register("quartz_herkimer_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> QUARTZ_HIGH_PURITY_CRYSTAL = ITEMS.register("quartz_high_purity_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> QUARTZ_METAMORPHOSED_SHARD = ITEMS.register("quartz_metamorphosed_shard",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> QUARTZ_ROCK_CRYSTAL = ITEMS.register("quartz_rock_crystal",
@@ -1061,6 +1271,14 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> REALGAR_CRYSTAL = ITEMS.register("realgar_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> REDGILLITE_CRYSTALS = ITEMS.register("redgillite_crystals",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> RHABDOPHANE_SHARD = ITEMS.register("rhabdphane_shard",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> RHODOCHROSITE_CRYSTAL = ITEMS.register("rhodochrosite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> RHODOCHROSITE_COBALT_FIBERS = ITEMS.register("rhodochrosite_cobalt_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RHODONITE_CHUNK = ITEMS.register("rhodonite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RHONITE_CRYSTAL = ITEMS.register("rhonite_crystal",
@@ -1074,6 +1292,10 @@ public class ModItems {
         public static final RegistryObject<Item> RINMANITE_CRYSTAL = ITEMS.register("rinmanite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> RIPIDOLITE_CRYSTAL = ITEMS.register("ripidolite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ROCKBRIDGEITE_CHUNK = ITEMS.register("rockbridgeite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ROMERITE_CRYSTAL = ITEMS.register("romerite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ROSASITE_FIBERS = ITEMS.register("rosasite_fibers",
                 () -> new Item(new Item.Properties()));
@@ -1097,6 +1319,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SANIDINE_SHARDS = ITEMS.register("sanidine_shards",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SANROMANITE_CRYSTALS = ITEMS.register("sanromanite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SAPONITE_CLAY_CHUNK = ITEMS.register("saponite_clay_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SAPPHIRE_CRYSTAL = ITEMS.register("sapphire_crystal",
@@ -1109,7 +1333,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SCHEELITE_CRYSTAL = ITEMS.register("scheelite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SCHOEPITE_CRYSTALS = ITEMS.register("schoepite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SCHORL_CRYSTAL = ITEMS.register("schorl_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SCHREIBERSITE_CHUNK = ITEMS.register("schreibersite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SCHULENBERGITE_CRYSTAL = ITEMS.register("schulenbergite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SCOLECITE_FIBERS = ITEMS.register("scolecite_fibers",
                 () -> new Item(new Item.Properties()));
@@ -1123,6 +1353,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SERPENTINE_FIBERS = ITEMS.register("serpentine_fibers",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SERPIERITE_FIBERS = ITEMS.register("serpierite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SIDERITE_CLUMP = ITEMS.register("siderite_clump",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SIDEROPHYLLITE_SHEET = ITEMS.register("siderophyllite_sheet",
@@ -1133,9 +1365,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SILVER_NATIVE = ITEMS.register("silver_native",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SKACHAITE_CRYSTAL = ITEMS.register("skachaite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SMECTITE_CLAY_CHUNK = ITEMS.register("smectite_clay_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SMITHSONITE_CHUNK = ITEMS.register("smithsonite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SMYTHITE_SHARDS = ITEMS.register("smythite_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SODALITE_CHUNK = ITEMS.register("sodalite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -1175,6 +1411,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SUDOLITE_SHEET = ITEMS.register("sudolite_sheet",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> SUENOITE_FIBERS = ITEMS.register("suenoite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SUGILITE_CRYSTAL = ITEMS.register("sugilite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> SULFUR_NATIVE = ITEMS.register("sulfur_native",
@@ -1197,11 +1435,17 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TALC_SHEET = ITEMS.register("talc_sheet",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TALC_BEACONITE_FIBERS = ITEMS.register("talc_beaconite_fibers",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TANTALITE_CHUNK = ITEMS.register("tantalite_chunk",
                 () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> TANZANITE_CRYSTAL = ITEMS.register("tanzanite_crystal",
+        public static final RegistryObject<Item> TANZANITE_CHUNK = ITEMS.register("tanzanite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ZOISITE_CRYSTAL = ITEMS.register("zoisite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TAPIOLITE_CRYSTAL = ITEMS.register("tapiolite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TELLURITE_CRYSTAL = ITEMS.register("tellurite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TENNANTITE_CRYSTAL = ITEMS.register("tennantite_crystal",
                 () -> new Item(new Item.Properties()));
@@ -1210,6 +1454,8 @@ public class ModItems {
         public static final RegistryObject<Item> TEPHROITE_SHARDS = ITEMS.register("tephroite_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TETRAHEDRITE_CRYSTAL = ITEMS.register("tetrahedrite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TETRATAENITE_CRYSTAL = ITEMS.register("tetrataenite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> THOMSONITE_CHUNK = ITEMS.register("thomsonite_chunk",
                 () -> new Item(new Item.Properties()));
@@ -1220,6 +1466,8 @@ public class ModItems {
         public static final RegistryObject<Item> THORIUM_NATIVE = ITEMS.register("thorium_native",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> THORTVEITITE_FIBERS = ITEMS.register("thortveitite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> THULITE_CHUNK = ITEMS.register("thulite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> THURINGITE_SHARDS = ITEMS.register("thuringite_shards",
                 () -> new Item(new Item.Properties()));
@@ -1233,7 +1481,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TLALOCITE_CLUMP = ITEMS.register("tlalocite_clump",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TOCHILINITE_CRYSTALS = ITEMS.register("tochilinite_crystals",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TODOROKITE_CRYSTALS = ITEMS.register("todorokite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TOPAZ_CRYSTAL = ITEMS.register("topaz_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TORBERNITE_CUBE = ITEMS.register("torbernite_cube",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TOURMALINE_CRYSTAL = ITEMS.register("tourmaline_crystal",
                 () -> new Item(new Item.Properties()));
@@ -1253,6 +1507,10 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TSAREGORODTSEVITE_CLUMP = ITEMS.register("tsaregorodtsevite_clump",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TSCHERMAKITE_CHUNK = ITEMS.register("tschermakite_chunk",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> TSCHERMIGITE_CRYSTAL = ITEMS.register("tschermigite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TUGTUPITE_SHARDS = ITEMS.register("tugtupite_shards",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> TURQUOISE_CHUNK = ITEMS.register("turquoise_chunk",
@@ -1261,11 +1519,17 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> URANIUM_NATIVE = ITEMS.register("uranium_native",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> URANOPHANE_CRYSTALS = ITEMS.register("uranophane_crystals",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> URANPYROCHLORE_CRYSTAL = ITEMS.register("uranpyrochlore_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> UVAROVITE_CRYSTAL = ITEMS.register("uvarovite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> UVITE_CRYSTAL = ITEMS.register("uvite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> VANADINITE_CRYSTAL = ITEMS.register("vanadinite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> VANDENDRIESSCHEITE_FIBERS = ITEMS.register("vandendriesscheite_fibers",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> VANTHOFFITE_SHARDS = ITEMS.register("vanthoffite_shards",
                 () -> new Item(new Item.Properties()));
@@ -1279,6 +1543,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> VIVIANITE_CRYSTALS = ITEMS.register("vivianite_crystals",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> VOLTAITE_CRYSTAL = ITEMS.register("voltaite_crystal",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> VULCANITE_CHUNK = ITEMS.register("vulcanite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WAVELLITE_CHUNK = ITEMS.register("wavellite_chunk",
@@ -1287,9 +1553,13 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WHITEITE_CRYSTALS = ITEMS.register("whiteite_crystals",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> WHITLOCKITE_CHUNK = ITEMS.register("whitlockeite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WILLEMSEITE_CHUNK = ITEMS.register("willemseite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WITHERITE_CRYSTAL = ITEMS.register("witherite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> WODGINITE_CHUNK = ITEMS.register("wodginite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WOHLERITE_CRYSTAL = ITEMS.register("wohlerite_crystal",
                 () -> new Item(new Item.Properties()));
@@ -1297,9 +1567,15 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WOLLASTONITE_CHUNK = ITEMS.register("wollastonite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> WOLSENDORFITE_FIBERS = ITEMS.register("wolsendorfite_fibers",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> WROEWOLFEITE_SHEET = ITEMS.register("wroewolfeite_sheet",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WULFENITE_CHUNK = ITEMS.register("wulfenite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> WURTZITE_CRYSTAL = ITEMS.register("wurtzite_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> XANTHOCONITE_CRYSTALS = ITEMS.register("xanthoconite_crystals",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> XENOTIME_CRYSTAL = ITEMS.register("xenotime_crystal",
                 () -> new Item(new Item.Properties()));
@@ -1309,6 +1585,8 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> YAFSOANITE_CRYSTAL = ITEMS.register("yafsoanite_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> YAVAPAIITE_CRYSTALS = ITEMS.register("yavapaiite_crystals",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> YTTROFLUORITE_CHUNK = ITEMS.register("yttrofluorite_chunk",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> YUGAWARALITE_SHEET = ITEMS.register("yugawaralite_sheet",
@@ -1317,11 +1595,17 @@ public class ModItems {
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ZEOLITE_CHUNK = ITEMS.register("zeolite_chunk",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ZINCITE_CHUNK = ITEMS.register("zincite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ZINCOCHROMITE_CRYSTAL = ITEMS.register("zincochromite_crystal",
                 () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ZIRCON_CRYSTAL = ITEMS.register("zircon_crystal",
                 () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ZIRCON_CYRTOLITE_CHUNK = ITEMS.register("zircon_cyrtolite_chunk",
+                () -> new Item(new Item.Properties()));
         public static final RegistryObject<Item> ZIRCON_HYACINTH_CRYSTAL = ITEMS.register("zircon_hyacinth_crystal",
+                () -> new Item(new Item.Properties()));
+        public static final RegistryObject<Item> ZORITE_CRYSTALS = ITEMS.register("zorite_crystals",
                 () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
