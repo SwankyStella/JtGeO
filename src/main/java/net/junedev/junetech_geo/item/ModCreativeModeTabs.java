@@ -441,7 +441,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.BERYL_RED.get());
                         pOutput.accept(ModBlocks.BERZEILITE.get());
                         pOutput.accept(ModBlocks.BETAFITE.get());
-                        pOutput.accept(ModBlocks.MICA_BIOTITE.get());
+                        pOutput.accept(ModBlocks.BIOTITE.get());
                         pOutput.accept(ModBlocks.BISCHOFITE.get());
                         pOutput.accept(ModBlocks.BISMUTH_PURE.get());
                         pOutput.accept(ModBlocks.BISMUTH_SYNTHETIC.get());
@@ -772,7 +772,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.METAVANDENDRIESSCHEITE.get());
                         pOutput.accept(ModBlocks.METAVOLTINE.get());
                         pOutput.accept(ModBlocks.METEORIC_IRON.get());
-                        pOutput.accept(ModBlocks.SCHIST_MICA.get());
+                        pOutput.accept(ModBlocks.MICA.get());
                         pOutput.accept(ModBlocks.MICROCLINE.get());
                         pOutput.accept(ModBlocks.MILLERITE.get());
                         pOutput.accept(ModBlocks.MIMETITE.get());
