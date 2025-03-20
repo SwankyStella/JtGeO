@@ -1,19 +1,6 @@
-package net.junedev.junetech_geo.worldgen.features;
+package net.junedev.junetech_geo.hyleport;
 //TODO: from Hyle, will need to look at the code more and also probably get permission to make a fork
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.WorldGenLevel;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.chunk.ChunkAccess;
-import net.minecraft.world.level.chunk.ChunkGenerator;
-import net.minecraft.world.level.chunk.LevelChunkSection;
-import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
-import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-
-import java.util.Objects;
 /*
 public class StoneReplacer extends Feature<StoneReplacerConfiguration> {
     private boolean isSeedSet = false;

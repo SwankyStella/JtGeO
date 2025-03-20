@@ -531,8 +531,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
     public static final RegistryObject<Block> HALITE_POLISHED = registerBlock("halite_polished",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "NaCl", true));
+    //TODO: figure out background rendering issues on cross blocks like the helictite.
     public static final RegistryObject<Block> HELICTITE = registerBlock("helictite",
-            () -> new DeadBushBlock(BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).sound(SoundType.DRIPSTONE_BLOCK)));
+            () -> new BushBlock(BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> HEMATITE_BLOCK = registerBlock("hematite_block",
             () -> new BlockWithTooltip(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE), "Fe₂O₃", true));
     public static final RegistryObject<Block> HORNBLENDE = registerBlock("hornblende",

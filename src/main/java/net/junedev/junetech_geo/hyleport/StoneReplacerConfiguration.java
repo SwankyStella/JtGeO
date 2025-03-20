@@ -1,4 +1,4 @@
-package net.junedev.junetech_geo.worldgen.features;
+package net.junedev.junetech_geo.hyleport;
 
 //
 // Source code recreated from a .class file by IntelliJ IDEA
