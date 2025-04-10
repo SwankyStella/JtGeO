@@ -1,4 +1,4 @@
-package net.junedev.junetech_geo.hyleport.core;
+/*package net.junedev.junetech_geo.hyleport.core;
 
 import net.junedev.junetech_geo.hyleport.StoneReplacer;
 import net.junedev.junetech_geo.hyleport.StoneReplacerConfiguration;
@@ -23,4 +23,4 @@ public class Registration {
         FEATURES = DeferredRegister.create(ForgeRegistries.FEATURES, "hyle");
         STONE_REPLACER = FEATURES.register("stone_replacer", () -> new StoneReplacer());
     }
-}
+}*/
