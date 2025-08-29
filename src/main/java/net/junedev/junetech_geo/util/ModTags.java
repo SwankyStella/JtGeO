@@ -40,7 +40,7 @@ public class ModTags {
         public static final TagKey<Block> SECONDARY_REPLACEABLE = tag("secondary_replaceable");
         public static final TagKey<Block> TERTIARY_REPLACEABLE = tag("tertiary_replaceable");
         public static final TagKey<Block> HARD_STONE_TOOL_MATERIALS = tag("hard_stone_tool_materials");
-        // NOTE: hard stone tool materials are separate from normal ones.
+        // NOTE: hard stone tool Materials are separate from normal ones.
 
         // Tooltip Tags
         public static final TagKey<Block> caso4 = tag(CASO4);
