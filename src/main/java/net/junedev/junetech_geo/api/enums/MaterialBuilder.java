@@ -1,5 +1,7 @@
 package net.junedev.junetech_geo.api.enums;
 
+import org.apache.commons.lang3.ObjectUtils;
+
 public class MaterialBuilder {
     private final int materialID;
     private String name;
@@ -11,17 +13,23 @@ public class MaterialBuilder {
     private int r = 255, g = 255, b = 255, a = 0;
     private String luster = null;
     private int rarity = 1;
+    private String group = null;
     private String customCondition = null;
+
 
 //    private List<MaterialItems> materialList = new ArrayList<>();
 
     public MaterialBuilder(int materialID, String localName) {
         this.materialID = materialID;
-        this.name = localName.replace(" ", "")
-                .replace("-", "");
-        this.localName = localName;
+        if (localName.equals("NULL")){
+            this.localName = name;
+        } else {
+            this.name = localName.replace(" ", "")
+                    .replace("-", "");
+            this.localName = localName;
+        }
     }
-    public Materials constructMaterial(int materialID, String name, String associatedBlock, String formula, int hardness, String textureTemplate, int r, int g, int b, int a, String luster, int rarity, String customCondition) {
+    public Materials constructMaterial(int materialID, String name, String associatedBlock, String formula, int hardness, String textureTemplate, int r, int g, int b, int a, String luster, int rarity, String group, String customCondition) {
         return new Materials(
                 materialID,
                 name,
@@ -33,6 +41,7 @@ public class MaterialBuilder {
                 r, g, b, a,
                 luster,
                 rarity,
+                group,
                 customCondition
         );
     }
@@ -58,6 +67,11 @@ public class MaterialBuilder {
     }
     public MaterialBuilder setLuster(String luster) {
         this.luster = luster;
+        return this;
+    }
+
+    public MaterialBuilder setGroup(String group) {
+        this.group = group;
         return this;
     }
 
