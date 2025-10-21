@@ -106,6 +106,19 @@ public class Materials implements IColorify, ISubTagContainer {
     public static Materials Actinium;
     public static Materials Thorium;
     public static Materials Uranium;
+    public static Materials AlkaliMetal;
+    public static Materials AlkaliEarthMetal;
+    public static Materials TransitionMetal;
+    public static Materials PostTransitionMetal;
+    public static Materials Metalloid;
+    public static Materials ReactiveNonMetal;
+    public static Materials Halogen;
+    public static Materials NobleGas;
+    public static Materials Lanthanide;
+    public static Materials Actinide;
+    public static Materials Cation2;
+    public static Materials Cation3;
+    public static Materials Cation4;
 
     /*
     Important Oxides
@@ -190,7 +203,7 @@ public class Materials implements IColorify, ISubTagContainer {
     public static Materials Sperrylite;
     public static Materials Sylvite;
     public static Materials Pollucite;
-    public static Materials Argentite;
+    public static Materials Acanthite;
     public static Materials Tantalite;
     public static Materials Monazite;
     public static Materials Rutile;
@@ -225,9 +238,7 @@ public class Materials implements IColorify, ISubTagContainer {
     public static Materials Prasiolite;
     public static Materials RoseQuartz;
     public static Materials SmokyQuartz;
-    public static Materials Jade;
     public static Materials Jadeite;
-    public static Materials Nephrite;
     //Garnets
     public static Materials Pyralspite; //Red Garnet
     public static Materials Almandine;
@@ -248,7 +259,6 @@ public class Materials implements IColorify, ISubTagContainer {
     public static Materials Heliodor;
     public static Materials RedBeryl;
     public static Materials Chrysoberyl;
-    public static Materials Alexadrite;
     public static Materials Lazurite;
     public static Materials Azurite;
     public static Materials Opal;

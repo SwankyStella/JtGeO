@@ -16,7 +16,6 @@ public class MaterialBuilder {
     private String group = null;
     private String customCondition = null;
 
-
 //    private List<MaterialItems> materialList = new ArrayList<>();
 
     public MaterialBuilder(int materialID, String localName) {
