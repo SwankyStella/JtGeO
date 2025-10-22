@@ -268,6 +268,8 @@ public class Materials implements IColorify, ISubTagContainer {
     public static Materials Chrysotile;
     public static Materials Asbestos;
 
+    
+
     @Override
     public short[] getRGBa() {
         return new short[0];

@@ -8,8 +8,8 @@ public class ChemicalBuilder {
         private String IUPACName;
         private String formula;
         private int pH;
-        private int meltingPoint;
-        private int boilingPoint;
+        private double meltingPoint;
+        private double boilingPoint;
         private int meltsInto; //ID of chemical it alters into, if applicable.
         private String colorName;
         private int transparency;
@@ -17,7 +17,6 @@ public class ChemicalBuilder {
         private int dissolvesInto; //ID of chemicals and ions it dissolves into
         private String mineralAssociate;
         private int enthalpyOfFormation;
-        private List components;
 
         public ChemicalBuilder(int chemicalID, String localName) {
             this.chemicalID = chemicalID;
@@ -29,7 +28,7 @@ public class ChemicalBuilder {
                 this.IUPACName = localName;
             }
         }
-        public Chemicals constructChemicals(int chemicalID, String name, String localName, String formula, int pH, int meltingPoint, int boilingPoint, int meltsInto, String colorName, int transparency, boolean solubility, int dissolvesInto, String mineralAssociate, int enthalpyOfFormation, List components) {
+        public Chemicals constructChemicals(int chemicalID, String name, String localName, String formula, int pH, double meltingPoint, double boilingPoint, int meltsInto, String colorName, int transparency, boolean solubility, int dissolvesInto, String mineralAssociate, int enthalpyOfFormation) {
             return new Chemicals(
                     chemicalID,
                     name,
@@ -44,8 +43,7 @@ public class ChemicalBuilder {
                     solubility,
                     dissolvesInto,
                     mineralAssociate,
-                    enthalpyOfFormation,
-                    components
+                    enthalpyOfFormation
             );
         }
     public ChemicalBuilder setName(String name) {
@@ -60,11 +58,11 @@ public class ChemicalBuilder {
         this.pH = pH;
         return this;
     }
-    public ChemicalBuilder setMP(int meltingPoint) {
+    public ChemicalBuilder setMP(double meltingPoint) {
         this.meltingPoint = meltingPoint;
         return this;
     }
-    public ChemicalBuilder setBP(int boilingPoint) {
+    public ChemicalBuilder setBP(double boilingPoint) {
         this.boilingPoint = boilingPoint;
         return this;
     }
@@ -94,10 +92,6 @@ public class ChemicalBuilder {
     }
     public ChemicalBuilder setEnthalpy(int enthalpyOfFormation) {
         this.enthalpyOfFormation = enthalpyOfFormation;
-        return this;
-    }
-    public ChemicalBuilder setComponents(List components) {
-        this.components = components;
         return this;
     }
 }
